@@ -1,0 +1,110 @@
+<!-- OFF SCRIPT Loader 1.3 – generisch fuer alle Ausgaben, ohne CMS-Felder. Wie das Paket geladen wird (CDN oder CSS inline), steht im Start-Teil des Rich Text der Ausgabe (von lab2cms erzeugt). -->
+<style id="os-loader-css">
+html.os-pkg-failed .layout-offscript{overflow-x:clip;background:#fff;color:#111}
+html.os-pkg-failed .os-issue-rt{box-sizing:border-box;max-width:44rem;margin:0 auto;padding:7rem 1.25rem 5rem;overflow-wrap:anywhere}
+html.os-pkg-failed .os-issue-rt *{position:static!important;transform:none!important;opacity:1!important;visibility:visible!important;animation:none!important;transition:none!important;clip-path:none!important;max-width:100%!important;box-sizing:border-box;float:none!important;margin-left:0!important;margin-right:0!important;background:transparent!important;color:inherit!important;min-height:0!important}
+html.os-pkg-failed .os-issue-rt img,html.os-pkg-failed .os-issue-rt video,html.os-pkg-failed .os-issue-rt picture,html.os-pkg-failed .os-issue-rt iframe,html.os-pkg-failed .os-issue-rt svg,html.os-pkg-failed .os-issue-rt canvas{display:block;width:100%!important;height:auto!important;margin:1rem 0}
+html.os-pkg-failed .os-issue-rt [aria-hidden="true"],html.os-pkg-failed .os-issue-rt [hidden],html.os-pkg-failed .os-issue-rt button{display:none!important}
+html.os-pkg-wait .os-issue-rt{visibility:hidden!important}
+</style>
+<script>
+(function () {
+  "use strict";
+  var d = document.documentElement, RT = ".os-issue-rt", wraps = {}, target = new Map(), done = false;
+  var L = window.OSL = { v: "1.3", manual: false, failed: false, css: 0, js: 0, parsed: false, started: false, blocked: false };
+  function sheets() { return [].slice.call(document.querySelectorAll("#os-pkg-css, style[data-os-css]")); }
+  L.fail = function (why) {                 /* Paket unbrauchbar: Lesefassung */
+    if (L.failed || L.started) return; L.failed = why || "unknown"; L.t = Math.round(performance.now());
+    d.classList.remove("os-pkg-wait"); d.classList.add("os-pkg-failed");
+    sheets().forEach(function (s) { if (s.sheet) s.sheet.disabled = true; if (s.parentNode) s.parentNode.removeChild(s); });
+  };
+  L.check = function () {                   /* Paket-CSS vorhanden und gelesen? */
+    if (L.failed) return false;
+    var ok = sheets().length > 0 && sheets().every(function (s) { try { return !!(s.sheet && s.sheet.cssRules.length); } catch (e) { return false; } });
+    if (!ok) L.fail("css"); return ok;
+  };
+  /* Modus "CDN asynchron" (vom Start-Teil per OSL.gate() eingeschaltet): Ausgabe bleibt verborgen, bis Kopf-Teil des Pakets gelaufen ist */
+  L.gate = function (o) {
+    o = o || {}; L.manual = true; d.classList.add("os-pkg-wait"); if (o.inlineCss) L.inlineCss = true;
+    setTimeout(function () { if (!L.preRan) L.jsFail(L.css ? "js-timeout" : "css-timeout"); }, o.jsWait || 3000);
+    if (!o.inlineCss) setTimeout(function () { if (!L.css) L.fail("css-timeout"); }, o.cssWait || 3000);
+  };
+  L.jsFail = function (why) {               /* JS fehlt/zu spaet: Gestaltung statisch (Paket-CSS, ohne Animationen) */
+    if (!L.manual) { L.fail(why); return; }
+    if (L.preRan || L.blocked || L.failed) return; L.blocked = why; L.t = Math.round(performance.now()); d.classList.add("os-pkg-static"); show();
+  };
+  function show() { d.classList.remove("os-pkg-wait"); }
+  function prestart() {
+    if (L.failed || L.preRan || !L.O || !L.css) return;
+    if (L.blocked) { if (window.scrollY > 40) return; L.late = L.blocked; L.blocked = false; d.classList.remove("os-pkg-static"); }
+    if (!L.check()) return;
+    L.preRan = true; L.O.pre(); show(); start();
+  }
+  function start() {
+    if (L.failed || L.started || !L.preRan || !L.parsed) return;
+    L.started = true; L.t = Math.round(performance.now()); L.O.main(); d.classList.add("os-pkg-live");
+  }
+  L.ready = function (O) { L.O = O; L.js = 1; prestart(); };
+  L.cssLoaded = function () { L.css = 1; prestart(); };
+  function wrapper(path, root) {
+    var parent = root;
+    for (var i = 0; i < path.length; i++) {
+      var w = wraps[path[i][0]];
+      if (!w) { w = document.createElement(path[i][1]); path[i][2].forEach(function (a) { w.setAttribute(a[0], a[1]); }); parent.appendChild(w); wraps[path[i][0]] = w; }
+      parent = w;
+    }
+    return parent;
+  }
+  function place(n, t) {
+    if (n.nodeType === 1 && (n.nodeName === "LINK" || (n.nodeName === "STYLE" && (n.hasAttribute("data-os-fallback") || n.hasAttribute("data-os-css"))))) document.head.appendChild(n);
+    else if (n.nodeType === 1 && n.nodeName === "TEMPLATE" && n.hasAttribute("data-os-pre")) pre(n);
+    else if (n.nodeType === 1 && n.nodeName === "SCRIPT") { /* Skripte bleiben, wo der Parser sie ausfuehrt */ }
+    else t.appendChild(n);
+  }
+  function pre(tpl) {
+    try { var p = JSON.parse(tpl.getAttribute("data-os-pre")); (p.class || []).forEach(function (c) { d.classList.add(c); });
+      Object.keys(p.attrs || {}).forEach(function (k) { d.setAttribute(k, p.attrs[k]); }); } catch (e) {}
+    if (tpl.parentNode) tpl.parentNode.removeChild(tpl);
+  }
+  function chunk(tpl) {
+    var box = tpl.parentNode, root = box && box.parentNode;
+    if (!root || !root.matches || !root.matches(RT) || target.has(box)) return;
+    var prev = box.previousElementSibling;
+    while (prev && prev.hasAttribute("data-rt-embed-type")) { var p = prev.previousElementSibling; if (!prev.firstChild) root.removeChild(prev); prev = p; }
+    var t = wrapper(JSON.parse(tpl.getAttribute("data-os-chunk")).p, root);
+    target.set(box, t); box.removeChild(tpl);
+    [].slice.call(box.childNodes).forEach(function (n) { place(n, t); });
+  }
+  function seen(n) {
+    if (n.nodeType === 1) {
+      if (n.classList && n.classList.contains("w-richtext") && n.matches(RT)) n.classList.remove("w-richtext");
+      if (n.nodeName === "TEMPLATE" && n.hasAttribute("data-os-chunk")) { chunk(n); return; }
+    }
+    var box = n.parentNode, t = box && target.get(box);
+    if (t) place(n, t);
+  }
+  var mo = new MutationObserver(function (r) { r.forEach(function (m) { m.addedNodes.forEach(seen); }); });
+  mo.observe(d, { childList: true, subtree: true });
+  L.flush = function () {
+    if (done) return; mo.takeRecords().forEach(function (m) { m.addedNodes.forEach(seen); });
+    document.querySelectorAll(RT + " > [data-rt-embed-type] > template[data-os-chunk]").forEach(chunk);
+    var root = document.querySelector(RT);
+    if (!root) return;
+    root.classList.remove("w-richtext");
+    root.querySelectorAll(":scope > [data-rt-embed-type]").forEach(function (b) {
+      var t = target.get(b); if (t) [].slice.call(b.childNodes).forEach(function (n) { place(n, t); });
+      /* leere Embed-Huellen (bis auf ausgefuehrte Skripte) entfernen; Skripte sind nach dem Lauf ohne Wirkung */
+      if (![].some.call(b.childNodes, function (n) { return n.nodeName !== "SCRIPT"; })) root.removeChild(b);
+    });
+  };
+  L.done = function () {
+    if (done) return; L.flush(); done = true; mo.disconnect(); L.parsed = true;
+    if (L.manual) { start(); return; }
+    /* Modus "synchron" (CSS inline, JS synchron im Start-Teil): Story-Teil jetzt */
+    if (L.failed || !L.check()) return;
+    if (!window.OSIssue || !window.OSIssue.main) { L.fail(L.js ? "js-ohne-main" : "js"); return; }
+    L.preRan = true; L.started = true; L.t = Math.round(performance.now()); window.OSIssue.main(); d.classList.add("os-pkg-live");
+  };
+  document.addEventListener("DOMContentLoaded", function () { L.done(); });
+})();
+</script>
