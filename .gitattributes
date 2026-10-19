@@ -1,1 +1,4 @@
 * text=auto eol=lf
+# Paketdateien byte-genau ausliefern (SRI): keine Zeilenende-Umwandlung
+packages/** -text
+loader/** -text
