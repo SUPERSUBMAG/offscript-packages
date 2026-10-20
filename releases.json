@@ -26,7 +26,7 @@
    "version": "4.4.11",
    "tag": "os001-4.4.11",
    "lab_version": "4.4.11",
-   "status": "entwurf",
+   "status": "staging-test",
    "files": {
     "issue.min.css": {
      "sri": "sha384-bnrLYeWxQj17FfnBYJIFaMDeM8xMEzg/O7Dtgcn7K2XU/KNF+gFRAXeL4XkSAWdU",
