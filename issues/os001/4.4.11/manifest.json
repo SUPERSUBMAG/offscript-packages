@@ -1,0 +1,30 @@
+{
+ "package": "os001@4.4.11",
+ "lab_version": "4.4.11",
+ "roots": [
+  "os001-hero",
+  "os026-story"
+ ],
+ "lab_only": {
+  "head": [],
+  "footer": [
+   "OFF SCRIPT LAB ONLY"
+  ]
+ },
+ "reading_hide": [
+  ".os026-sl"
+ ],
+ "embed_limit": 9800,
+ "pre_paint": {
+  "class": [
+   "os-mpnew",
+   "os-hero-big"
+  ],
+  "attrs": {
+   "data-os-hero": "b"
+  }
+ },
+ "pre_paint_quelle": "automatisch aus Lab abgeleitet (tools/prepaint.js): Zustand am <html> beim Beginn von <body>, ohne Webflow-eigene Werte",
+ "cdn_base": "https://cdn.jsdelivr.net/gh/SUPERSUBMAG/offscript-packages@{package}-{version}/packages/{package}/{version}/",
+ "lab_source": "/os-lab-player (Arbeitsfassung Player V2, Staging-Stand 2026-10-20 14:47 UTC) nach Release-Vorbereitung (tools/prep: alter Player, ?mp=old-Schalter und data-ssmp-lab entfernt)"
+}

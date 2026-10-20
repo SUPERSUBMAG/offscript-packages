@@ -1,0 +1,499 @@
+/* OFF SCRIPT os001@4.4.11 – Paket, aus Lab 4.4.11 erzeugt (lab2cms). Inhalt unveraendert, Reihenfolge wie im Lab. */
+
+.os029-sz{box-sizing:border-box;max-width:640px;margin:clamp(28px,4vh,48px) auto 0;padding:22px 0 0;border-top:1px solid rgba(243,237,228,.22);font-family:"Inter 28 Pt",Arial,sans-serif;color:#F3EDE4}
+.os029-sz[hidden]{display:none}
+.os029-sz *{box-sizing:border-box}
+.os029-sz-k{margin:0 0 12px;font-size:10px;line-height:1.4;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+.os029-sz-h{margin:0;font-size:20px;line-height:1.2;font-weight:600;letter-spacing:-.01em;outline:none}
+.os029-sz-now{margin:6px 0 18px;font-size:14px;line-height:1.45}
+.os029-sz-txt{margin:0 0 14px;font-size:13px;line-height:1.5;max-width:52ch}
+.os029-sz a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.os029-sz-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+.os029-sz-btn{appearance:none;min-height:44px;padding:0 20px;border:1px solid currentColor;border-radius:0;background:transparent;color:inherit;font:600 13px/1 "Inter 28 Pt",Arial,sans-serif;letter-spacing:.04em;cursor:pointer}
+.os029-sz-btn:focus-visible,.os029-sz a:focus-visible,.os029-sz input:focus-visible,.os029-sz-h:focus-visible{outline:2px solid #C95F4B;outline-offset:3px}
+.os029-sz-rem{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:13px;cursor:pointer}
+.os029-sz-rem input{width:16px;height:16px;margin:0;accent-color:#C95F4B}
+.os029-sz-embed{min-height:152px}
+.os029-sz-embed:empty{min-height:0}
+.os029-sz-embed iframe{display:block;width:100%;max-width:100%;border:0}
+.os029-sz-status{margin:12px 0 0;font-size:13px;line-height:1.45}
+.os029-sz-status:empty{display:none}
+.os029-sz-ext{display:inline-block;margin-top:14px;font-size:13px;line-height:1.4;min-height:24px}
+.os029-sz.is-loaded .os029-sz-consent{display:none}
+.os029-sz.is-failed .os029-sz-embed{display:none}
+/* Notizen sind redaktionelle Angaben, kein Julian-Zitat: kein Zitatzeichen (Breite bleibt erhalten) */
+.os029-mp[data-note-plain] .notes__quote::before{visibility:hidden}
+/* Semantische Farb-Tokens (Werte = Basisvariablen aus dem Footer). 4.2: --os-umber = Herbstpark-Umbra (Randfarben herbst-park #2A241E–#322B1C) */
+:root{--os-base:var(--os-black);--os-story:var(--os-red);--os-paper:var(--os-white);--os-sun:var(--os-yellow);--os-mid:#484133;--os-umber:#2B2419}
+/* 4.2 Sport-Abschnitt ohne inszenierte Ueberleitung: Clip folgt mit normalem Kapitelabstand, Q&A schliesst direkt an */
+.os026-story .os026-fb{padding-top:16vh}
+.os026-story .os026-fb-text{padding-top:12vh;padding-bottom:12vh}
+@media (max-width:767px){.os026-story .os026-fb{padding-top:12vh}.os026-story .os026-fb-text{padding-top:10vh;padding-bottom:10vh}}
+/* 3.0 PEOPLE: ruhiger Lese-Abschnitt auf Schwarz, vorhandene Module; Bildpaar kleiner als im Moving-Kapitel */
+.os026-story [data-os026-moment="08-people"]{padding-top:18vh}
+.os026-story [data-os026-moment="08-people"] .os026-pair-img{height:78vh}
+@media (max-width:767px){.os026-story [data-os026-moment="08-people"]{padding-top:14vh}.os026-story [data-os026-moment="08-people"] .os026-pair-img{height:56svh}}
+/* 3.0 SUPERSUB-S: Typenschild vor "SS/PLAY 1.02" (Herstellermarke, Label-Farbe, gepraegt; Modellzeile ist unter 1200 px ausgeblendet) */
+.os029-mp .os029-smark{font-family:"Druk Wide Bold",Arial,sans-serif;font-weight:700;font-style:normal;font-size:1.3em;line-height:1;vertical-align:-1px;letter-spacing:0;margin-right:.5em;color:inherit}
+/* 3.0.2 Dieselbe Modellzeile auch < 1200 px: im freien Hardware-Streifen zwischen Display und Volume (Geometrie des Players unveraendert) */
+@media (max-width:1199px){.os029-mp .mp .a-pod__title{display:block;left:174px;bottom:86px;z-index:3}}
+/* 3.0.2 Mode-Strip: playlist in derselben Grundstufe wie dock/x-back/shuffle/repeat/library (neutralisiert span.b) */
+.os029-mp .mp .a-tog span.b{font-size:inherit;letter-spacing:normal}
+/* 3.0.2 TASTE als ruhiger Themenmarker an der Lesespalte (vorher 32vw/43vw); +1vw gleicht das Drift-Ende (-1vw) aus */
+.os026-story .os026-ts .os001-ts-word{font-size:clamp(66px,8vw,128px);margin-left:calc(max(0px,(100% - 698px) / 2) + 24px + 1vw)}
+.os026-story .os026-ts>.os026-sec{padding-top:clamp(28px,5vh,56px)}
+@media (max-width:991px){.os026-story .os026-ts .os001-ts-word{margin-left:calc(max(0px,(100% - 608px) / 2) + 24px + 1vw)}}
+@media (max-width:767px){.os026-story .os026-ts .os001-ts-word{font-size:17vw}}
+/* 3.0.1 Mobile-Komposition < 1200 px: Kopf -> Trackliste -> Spotify-Zone -> Notes -> EQ -> Modus-Reiter (Lab: ?mpmob=old) */
+@media (max-width:1199px){
+html.os-mpnew .os029-mp .skin-a .stage{grid-template-areas:"pod pod" "orb vol" "orb listen" "pl pl" "sz sz" "notes notes" "eq eq" "tog tog"}
+html.os-mpnew .os029-mp .a-pl{margin-top:30px}
+html.os-mpnew .os029-mp .a-notes{margin-top:18px}
+html.os-mpnew .os029-mp .stage>.os029-sz{grid-area:sz;max-width:none;width:auto;margin:30px 4px 0 12px}
+html.os-mpnew .os029-mp .a-eq{margin-top:48px}
+}
+/* 3.0.1 LISTEN visuell sekundaer zu PLAY: kleinere Schrift, flacherer Schlagschatten; Geometrie, Klickflaeche und Textfarbe (Kontrast) unveraendert */
+.os029-mp .mp .listen{font-size:18px;box-shadow:var(--bevel),3px 4px 0 rgba(0,0,0,.4)}
+/* 3.0.3 OFF SCRIPT Branding am Player-Modus-Reiter (off-script-final-black.svg, unveraendert, als Daten-URI). 4.0: Handheld-Mark entfaellt mit dem Handheld; im Hero steht die Wortmarke als SVG-Asset. */
+.os029-mp .a-tog::before{content:"";order:-1;flex:none;display:block;height:12px;margin:0 0 4px;background:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 -101.7 708.33 103.4%22 role=%22img%22 aria-label=%22OFF SCRIPT%22%3E%3Cpath fill=%22%23000%22 d=%22M63 -101.7C22.68 -101.7 0 -83.09 0 -50C0 -21.05 27.72 1.7 63 1.7C98.28 1.7 126 -21.05 126 -50C126 -83.09 103.32 -101.7 63 -101.7ZM426.33 -0L460.33 -0L460.33 -37L477.33 -0L511.33 -0L492.33 -41L483 -41C496.29 -46.4 505.33 -56.72 505.33 -68.5C505.33 -90.55 492.29 -100 461.88 -100L426.33 -100ZM554.73 -0L588.73 -0L588.73 -31L589.38 -31C612.67 -31 631.73 -46.53 631.73 -65.5C631.73 -89.65 619.02 -100 589.38 -100L554.73 -100ZM333.04 -72.8C332.05 -91 318.22 -101.6 295.5 -101.6C272.78 -101.6 257.96 -90 257.96 -70C257.96 -61 259.45 -54 263.4 -50C269.82 -43.5 282.66 -41 294.51 -38.5C301.92 -37 306.37 -34.5 306.37 -29.5C306.37 -25 301.92 -22 295.01 -22C286.61 -22 280.68 -26 277.72 -34.5L255 -29.2C256.98 -10 272.78 1.6 295.5 1.6C319.21 1.6 335.01 -10 335.01 -31C335.01 -40 332.54 -47 326.62 -52C319.21 -58 306.37 -60.5 294.51 -63C287.6 -64.5 284.63 -67 284.63 -71.5C284.63 -75.5 288.09 -78.5 295.01 -78.5C302.41 -78.5 308.34 -74.5 311.8 -66.5ZM381.61 -101.7C351.86 -101.7 339.11 -86.19 339.11 -50C339.11 -21.57 358.24 1.7 381.61 1.7C400.3 1.7 416.26 -13.16 421.92 -33.65L397.77 -35.45C395.39 -27.96 391.09 -23.5 385.61 -23.5C378.29 -23.5 373.41 -34.3 373.41 -50.5C373.41 -70.21 376.84 -77.5 386.11 -77.5C393.37 -77.5 397.31 -73.66 398.92 -64.02L423.03 -66.41C419.39 -90.93 406.4 -101.7 381.61 -101.7ZM635.33 -75.5L654.33 -75.5L654.33 -0L689.33 -0L689.33 -75.5L708.33 -75.5L708.33 -100L635.33 -100ZM130 -0L162 -0L162 -44L171 -44L171 -66.5L162 -66.5L162 -75.5L177 -75.5L177 -100L130 -100ZM181 -0L213 -0L213 -44L222 -44L222 -66.5L213 -66.5L213 -75.5L228 -75.5L228 -100L181 -100ZM514.63 -0L548.63 -0L548.63 -100L514.63 -100ZM63 -77.5C72.62 -77.5 76 -70.35 76 -50C76 -32.95 71.06 -22.5 63 -22.5C54.94 -22.5 50 -32.95 50 -50C50 -70.35 53.38 -77.5 63 -77.5ZM588.73 -76.5L595.29 -76.5C602.22 -76.5 604.53 -73.75 604.53 -65.5C604.53 -58.9 600.83 -54.5 595.29 -54.5L588.73 -54.5ZM460.33 -76.5L467.97 -76.5C475.89 -76.5 478.53 -74.5 478.53 -68.5C478.53 -63.7 474.3 -60.5 467.97 -60.5L460.33 -60.5Z%22/%3E%3C/svg%3E%0A") no-repeat 0 50%/contain}
+@media (max-width:1199px){.os029-mp .a-tog::before{flex-basis:100%;height:11px;margin:2px 0 4px;background-position:50% 50%}}
+/* ===== 4.0 Foto-Hero (ersetzt Handheld komplett; Hero-Embed-CSS/-JS entfernt) ===== */
+.os001-hero{position:relative;box-sizing:border-box;margin-top:var(--nav-h,64px);height:calc(var(--ss-stable-vh,100svh) - var(--nav-h,64px));min-height:420px;overflow:hidden;isolation:isolate;background:#0b0907;color:#F3EEE4}
+.os001-hero *,.os001-hero *::before,.os001-hero *::after{box-sizing:border-box}
+.os001-hero-photo{position:absolute;inset:0;margin:0;z-index:0;background:#0b0907}
+.os001-hero-photo .w-embed,.os001-hero-photo picture,.os001-hero-photo img{display:block;width:100%;height:100%}
+.os001-hero-photo img{object-fit:cover;object-position:57% 38%}
+.os001-hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to top,rgba(8,6,5,.66) 0%,rgba(8,6,5,.34) 26%,rgba(8,6,5,0) 50%),linear-gradient(to bottom,rgba(8,6,5,.42) 0%,rgba(8,6,5,0) 24%)}
+.os001-hero .os026-hero.os029-title{position:absolute;inset:0;z-index:2;height:auto;margin:0;padding:clamp(22px,2.6vw,40px) 4vw clamp(26px,3.6vw,56px);display:flex;flex-direction:column;align-items:flex-start;background:transparent;overflow:visible}
+.os001-hero .os026-hero.os029-title>.w-embed{order:0;line-height:0}
+.os001-hero .os4-hero-mark{display:block;width:clamp(170px,14vw,236px);height:auto}
+.os001-hero .os026-hero.os029-title .os026-hero-name{order:2;position:static;margin:auto 0 0;padding:0;width:min-content;white-space:normal;font:800 clamp(64px,10.4vw,172px)/.84 "Inter 28 Pt",Arial,sans-serif;letter-spacing:-.035em;text-transform:uppercase;color:#F3EEE4;outline:none}
+.os001-hero-sr,.os026-story .os001-hero-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media (max-aspect-ratio:4/5){.os001-hero-photo img{object-position:50% 30%}}
+@media (max-width:767px){
+.os001-hero{min-height:480px}
+.os001-hero::after{background:linear-gradient(to top,rgba(8,6,5,.72) 0%,rgba(8,6,5,.38) 30%,rgba(8,6,5,0) 56%),linear-gradient(to bottom,rgba(8,6,5,.46) 0%,rgba(8,6,5,0) 22%)}
+.os001-hero .os026-hero.os029-title{padding:20px 6vw 28px}
+.os001-hero .os4-hero-mark{width:150px}
+.os001-hero .os026-hero.os029-title .os026-hero-name{font-size:19vw;line-height:.86}
+}
+/* ===== 4.0 Medien in den bestehenden Slots (Foto / Polaroid / Camcorder) ===== */
+.os026-story [data-os4]{background-color:transparent}
+.os026-story [data-os4]>.w-embed{position:absolute;inset:0}
+.os4-m{position:absolute;inset:0;margin:0;overflow:hidden}
+.os4-m picture{display:block;width:100%;height:100%}
+.os4-m img,.os4-m video{display:block;width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 50%)}
+.os4-m[data-fit="contain"] img,.os4-m[data-fit="contain"] video{object-fit:contain}
+@media (min-width:768px){.os4-m[data-fit-d="contain"] img{object-fit:contain}}
+@media (max-width:767px){.os4-m img{object-position:var(--pos-m,var(--pos,50% 50%))}}
+.os4-m[data-kind="polaroid"]{display:flex;align-items:center;justify-content:center;padding:5vh 5vw;overflow:visible}
+.os4-m[data-kind="polaroid"] img{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;transform:rotate(var(--rot,0deg));filter:drop-shadow(0 14px 22px rgba(0,0,0,.26))}
+.os026-story .os026-full-dk[data-os4="polaroid"] .os4-m,.os026-story .os026-full[data-os4="polaroid"] .os4-m{padding:12vh 8vw}
+.os026-story .os026-card [data-os4="polaroid"] .os4-m{padding:3vh 2vw}
+/* 4.2 Polaroid-Gruppen: bewusst ueberlappend, Mittelpunkt + Drehung je Bild (--x/--y/--r, Hochformat --xm/--ym/--rm), keine Rahmenflaeche dahinter */
+.os026-story [data-os4="group"]{height:var(--os4-gh)!important;min-height:0!important;--os4-pw:min(25vw,50vh);--os4-gh:max(100vh,calc(var(--os4-pw) * 2.05))}
+.os026-story [data-os4="group"][data-os4-g="2"]{--os4-pw:min(28vw,56vh)}
+.os4-m[data-kind="group"]{overflow:visible}
+.os4-m .os4-pg{position:absolute;left:var(--x);top:var(--y);width:var(--os4-pw);height:auto;max-width:none;object-fit:contain;z-index:var(--z,1);transform:translate(-50%,-50%) rotate(var(--r,0deg));filter:drop-shadow(0 16px 26px rgba(0,0,0,.28))}
+@media (max-aspect-ratio:4/5){
+.os026-story [data-os4="group"]{--os4-pw:min(64vw,46vh);--os4-gh:calc(var(--os4-pw) * 3.25)}
+.os026-story [data-os4="group"][data-os4-g="2"]{--os4-pw:min(66vw,48vh);--os4-gh:calc(var(--os4-pw) * 2.5)}
+.os4-m .os4-pg{left:var(--xm);top:var(--ym);transform:translate(-50%,-50%) rotate(var(--rm,0deg))}
+}
+.os026-story .os026-pair[data-os026-pair-mode="static"]>.os026-pair-img[data-os4-g="2"]{grid-column:1/-1;width:100%;max-width:none;margin:0}
+/* 4.2 Clips: Loop ohne sichtbaren Knopf; kleine Icon-Steuerung erscheint bei Tastaturfokus, Hover/Tipp oder im pausierten Zustand */
+.os4-vbtn{position:absolute;right:12px;bottom:12px;z-index:2;display:flex;align-items:center;justify-content:center;width:34px;height:34px;padding:0;border:0;border-radius:50%;background:rgba(10,8,6,.5);color:#F3EEE4;cursor:pointer;opacity:0;transition:opacity .25s ease;-webkit-tap-highlight-color:transparent}
+.os4-vbtn[hidden]{display:none}
+.os4-m[data-kind="video"]{display:flex;align-items:center;justify-content:center}
+.os4-vbox{position:relative;height:100%;max-width:100%;aspect-ratio:540/960}
+.os4-m[data-kind="video"][data-fit="cover"] .os4-vbox{width:100%;aspect-ratio:auto}
+.is-ui>.os4-vbtn,.is-paused>.os4-vbtn,.os4-vbtn:focus-visible{opacity:1}
+.os4-vbtn:focus-visible{outline:2px solid #F3EEE4;outline-offset:2px}
+.os4-vbtn-i{width:10px;height:11px;flex:none;background:linear-gradient(90deg,currentColor 0 34%,transparent 34% 66%,currentColor 66%)}
+.os4-vbtn[aria-pressed="true"] .os4-vbtn-i{width:11px;margin-left:2px;background:currentColor;clip-path:polygon(0 0,100% 50%,0 100%)}
+@media (prefers-reduced-motion:reduce){.os4-vbtn{transition:none}}
+/* ===== 4.3 Tiefen-Hero (Versuch): Foto -> grosse OFF-SCRIPT-Wortmarke -> deckungsgleiche Freistellung von Julian aus demselben Foto.
+   Vordergrund nutzt dieselbe Bildgeometrie (object-fit/-position) und ist auf die Form der Wortmarke maskiert: ausserhalb der Wortmarke
+   bleibt nur das Originalfoto sichtbar (keine doppelten Konturen). ?hero=a (zentral) | b (hoeher, Default) | small (Stand 4.2) ===== */
+.os4-hero-depth{display:none;position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0;transition:opacity .5s ease}
+html.os-hero-big .os4-hero-depth{display:block}
+.os4-hero-depth.is-ready{opacity:1}
+@media (prefers-reduced-motion:reduce){.os4-hero-depth{transition:none}}
+.os001-hero-photo .os4-hero-big{position:absolute;object-fit:fill;left:var(--bx,10%);top:var(--by,30%);width:var(--bw,80%);height:auto;max-width:none}
+.os001-hero-photo .os4-hero-fg,.os001-hero-photo .os4-hero-fg img{position:absolute;inset:0;display:block;width:100%;height:100%}
+.os001-hero-photo .os4-hero-fg img{object-fit:cover;-webkit-mask-image:var(--os4-mark);mask-image:var(--os4-mark);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:var(--bw,80%) auto;mask-size:var(--bw,80%) auto;-webkit-mask-position:var(--bx,10%) var(--by,30%);mask-position:var(--bx,10%) var(--by,30%)}
+html.os-hero-big .os001-hero .os026-hero.os029-title>.w-embed{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+html.os-hero-big .os001-hero::after{background:linear-gradient(to top,rgba(8,6,5,.62) 0%,rgba(8,6,5,.3) 24%,rgba(8,6,5,0) 46%)}
+@media (max-width:767px){html.os-hero-big .os001-hero::after{background:linear-gradient(to top,rgba(8,6,5,.7) 0%,rgba(8,6,5,.36) 28%,rgba(8,6,5,0) 52%)}}
+/* 4.3.4 SL-04 Editorial Crop: Bild an der Unterkante verankert (Schuhe bei 98,5 % der Bildhoehe), Beschnitt nur oben */
+.os026-story [data-os026-shot="SL-04"]{min-height:calc(100vw / 2.1)!important}
+.os026-story [data-os026-shot="SL-04"] .os4-m img{object-position:52% 100%}
+@media (max-aspect-ratio:4/5){.os026-story [data-os026-shot="SL-04"]{min-height:0!important}.os026-story [data-os026-shot="SL-04"] .os4-m img{object-position:50% 100%}}
+/* 4.3.5 SL-18 entfaellt, wo der Ziegel-Hero steht: dasselbe Foto (gleiche Bedingung wie das Hero-<picture>) */
+@media (max-aspect-ratio:4/5){.os026-story [data-os026-shot="SL-18"]{display:none}}
+/* 4.3.5 Tablet hoch (ab 768 px Breite im Hochformat): Bildflaechen nach Motivformat statt Breite in vw x Hoehe in vh (sonst Streifen bis 1 : 3,3); Polaroids wie Mobile */
+@media (min-width:768px) and (max-aspect-ratio:4/5){
+.os026-story .os026-pair{align-items:flex-start}
+.os026-story .os026-pair-img{height:auto;aspect-ratio:2/3}
+.os026-story .os026-eye-img,.os026-story .os026-nx-img{width:72vw;height:auto;aspect-ratio:2/3}
+.os026-story .os026-bq-img{height:auto;aspect-ratio:9/16;max-height:100vh}
+.os026-story .os026-card-1{width:78vw;height:62svh;margin-left:6vw}
+.os026-story .os026-card-2{width:88vw;height:54svh;margin-left:6vw}
+.os026-story .os026-card-3{width:62vw;height:66svh;margin-left:32vw}
+.os026-story .os026-card-4{width:88vw;height:72svh;margin-left:6vw}
+.os026-story .os026-card-1 .os4-m img,.os026-story .os026-card-2 .os4-m img{width:64vw}.os026-story .os026-card-3 .os4-m img{width:54vw}.os026-story .os026-card-4 .os4-m img{width:70vw}
+}
+/* ===== 4.0 Interview: Frage / Antwort / Songliste ===== */
+.os026-story .os026-p[data-os4-q]{font-weight:600;letter-spacing:-.005em;margin-top:52px;margin-bottom:14px}
+.os026-story .os026-col>.os026-p[data-os4-q]:first-child,.os026-story .os026-note+.os026-p[data-os4-q],.os026-story .os026-lead+.os026-p[data-os4-q]{margin-top:0}
+.os026-story .os026-p[data-os4-song]{margin-bottom:4px}
+.os026-story .os026-p[data-os4-song]:last-of-type{margin-bottom:32px}
+.os026-story .os026-p[data-os4-song]+.os026-p:not([data-os4-song]){margin-top:28px}
+.os026-story .os026-p-dk+.os026-p{margin-top:0}
+.os026-story .os026-stop .os026-p-dk{margin-bottom:28px}
+@media (max-width:767px){.os026-story .os026-p[data-os4-q]{margin-top:40px}}
+
+
+/* ---------- 4.4.6 Mobile (bis 767 px): Einstieg auf einer Mittelachse, Zitat bei SL-13 als Fliesstext vor dem Video. Tablet/Desktop unveraendert. Steht im Hero-Embed (vor der Story) und traegt daher html:root fuer Vorrang ---------- */
+@media (max-width:767px){
+ /* Titel (Instrument Serif) und Teaser: mittig; Titel bricht nach Sinnzeilen ("Neues wagen," / "ohne sich" / "zu verbiegen"), Teaser ohne einzelnes Wort in der letzten Zeile */
+ html:root body .os026-story h1.os4-title{text-align:center;margin-bottom:.6em}
+ html:root body .os026-story h1.os4-title+.os4-teaser{text-align:center;text-wrap:pretty;max-width:20em;margin-left:auto;margin-right:auto}
+ /* 4.4.8 Textspalte wie im regulaeren Artikel-Template: 16 px links/rechts (gemessen: Fliesstext, Burger-Menue und Such-Icon bei 16 px). Titel/Teaser, Credits und Medien unveraendert */
+ html:root body .os026-story .os026-sec:not([data-os026-moment="01-new-city"]) .os026-col{padding-left:16px;padding-right:16px}
+}
+/* 4.4.8 SW-Portraet beim Zitat (vorher Video): gleiche Hoehe wie bisher, Format 2:3 ohne Beschnitt. Dort, wo der Ziegel-Hero steht (Hochformat, inkl. Mobile), wie bisher SL-18 nicht gezeigt */
+@media (min-width:768px) and (min-aspect-ratio:4/5){html:root body .os026-story .os026-bq-img{width:calc(min(56.25vh,32vw) * 32 / 27);aspect-ratio:2/3}}
+@media (max-aspect-ratio:4/5){html:root body .os026-story .os026-bq-img{display:none}}
+
+/* 4.4.10 Zitat SL-13 als normaler Absatz ueberall dort, wo die Hochformat- oder Mobil-Komposition gilt (gleiche Bedingung wie Hero-Foto, Polaroids und Ink-Rolle im Footer).
+   Textspalte, Abstaende und Schrift wie .os026-p der Seite: 18/30, bis 991 px 17/27, bis 767 px 16/26, bis 479 px 16/24 (Werte aus dem Webflow-Stil von .os026-p). Kein Haften, keine Bewegung */
+@media (max-width:767px),(max-aspect-ratio:4/5){
+ html:root body .os026-story .os026-ou>.os026-sec:has(+.os026-bq){padding-bottom:0}
+ html:root body .os026-story .os026-bq{position:relative;top:auto;height:auto}
+ html:root body .os026-story .os026-bq-text{order:-1;box-sizing:border-box;width:100%;max-width:698px;margin:0 auto;padding:0 24px calc(var(--sp-nah) + 20px)}
+ html:root body .os026-story .os026-bq-quote.os4-bq-p{margin:0;font-family:"Inter 28 Pt",Arial,sans-serif;font-size:18px;line-height:30px;font-weight:400;font-style:normal;letter-spacing:normal;text-transform:none;color:rgba(255,255,255,.88);transform:none!important;will-change:auto;-webkit-hyphens:auto;hyphens:auto;text-wrap:wrap}
+}
+@media (max-width:767px),(max-width:991px) and (max-aspect-ratio:4/5){html:root body .os026-story .os026-bq-text{max-width:608px}html:root body .os026-story .os026-bq-quote.os4-bq-p{font-size:17px;line-height:27px}}
+@media (max-width:767px){html:root body .os026-story .os026-bq-text{padding:0 16px calc(var(--sp-nah) + 20px)}html:root body .os026-story .os026-bq-quote.os4-bq-p{font-size:16px;line-height:26px}}
+@media (max-width:479px){html:root body .os026-story .os026-bq-quote.os4-bq-p{line-height:24px}}
+
+/* 4.4.8 unsichtbarer Anker an der alten SL-18-Stelle: haelt den Farbuebergang C5 exakt dort, wo bisher die Oberkante des Portraets lag (22vh bzw. mobil 14vh unter dem Zitat), ohne Platz einzunehmen */
+.os026-story .os4-anchor{--a:22vh;height:0;margin:0;padding:0;position:relative;top:var(--a);pointer-events:none}
+@media (max-width:767px){.os026-story .os4-anchor{--a:14vh}}
+@media (max-aspect-ratio:4/5){.os026-story .os4-anchor{margin-top:var(--a)}}
+
+/* ---------- 4.4.9 Responsive-Audit: Regeln folgen der Komposition. Hochformat (max-aspect-ratio 4/5) = Hochformat-Hero-Foto und kompakte Polaroid-Inszenierung, unabhaengig von der Breite ---------- */
+/* B: Hero-Name JULIAN BRANDT mittig, wo das Hochformat-Foto steht (vorher nur bis 767 px; iPad hochkant lag der Name links). Groesse unveraendert */
+@media (max-aspect-ratio:4/5){html:root body .os001-hero .os026-hero.os029-title .os026-hero-name{align-self:center;margin-left:auto;margin-right:auto;text-align:center}}
+/* A: Polaroid-Gruppen im Hochformat ab 768 px wie mobil zentriert im Rahmen und auf Rahmenhoehe begrenzt (vorher Hochformat-Positionen --xm/--ym mit Desktop-Groesse: Karte 1 ragte bis 150 px in den Absatz davor) */
+@media (min-width:768px) and (max-aspect-ratio:4/5){
+ html:root body .os026-story [data-os4="group"].os4-stk-on .os4-pg{left:50%;top:50%;width:min(68vw,calc(var(--stk-fh,70svh) * .74));transform:translate(-50%,calc(-50% + var(--stk-y,0px))) rotate(var(--rm,0deg))}
+ /* Polaroid-Stapel: Bildbreite wie mobil (vorher 40/32/44vw wie Desktop, auf dem iPad hochkant sehr klein) */
+ html:root body .os026-story .os026-stack.os4-stk-on .os026-card-1,html:root body .os026-story .os026-stack.os4-stk-on .os026-card-2{--pgw:64vw}
+ html:root body .os026-story .os026-stack.os4-stk-on .os026-card-3{--pgw:54vw}
+ html:root body .os026-story .os026-stack.os4-stk-on .os026-card-4{--pgw:70vw}
+}
+/* Titel 600-767 px: nicht groesser als am Tablet-Hochformat-Start (vorher 15vw = bis 115 px, ab 768 px dann 84 px). Bis 560 px unveraendert */
+@media (max-width:767px){html:root body .os026-story h1.os4-title{font-size:min(15vw,84px)}}
+/* Bildpaare in fast quadratischen Fenstern (Seitenverhaeltnis 4/5 bis ca. 1,2): Hoehe begrenzt, sonst sehr schmale, hohe Ausschnitte. Desktop/iPad quer unveraendert */
+@media (min-width:768px) and (min-aspect-ratio:4/5){html:root body .os026-story .os026-pair:not(.os4-vpair)>.os026-pair-img{height:min(110vh,90vw)}}
+/* Layout Shift beim Laden: --nav-h kommt erst per Seitenscript (gemessen 57 px bis 1100 px Breite, darueber 65 px); bis dahin rechnete der Hero mit 64 px und sprang danach um 7 px (CLS mobil/Tablet ca. 0,29). Startwerte = gemessene Navigationshoehe; das Script ueberschreibt sie wie bisher */
+:root{--nav-h:65px}
+@media (max-width:1100px){:root{--nav-h:57px}}
+
+
+/* Hero B · Druk Wide Bold: Name gestapelt JULIAN / BRANDT; Breite von BRANDT = 6,457 em */
+.os001-hero .os026-hero.os029-title .os026-hero-name{font-family:"Druk Wide Bold","Druk Wide",Arial,sans-serif;font-weight:700;font-size:clamp(56px,9.4vw,190px);line-height:.9;letter-spacing:-.005em}
+@media (max-aspect-ratio:4/5){.os001-hero .os026-hero.os029-title .os026-hero-name{font-size:13.4vw;line-height:.92}}
+
+/* Querformat-Handy: Hero nicht hoeher als das Fenster, sonst liegt der Name unter der Bildkante */
+@media (orientation:landscape) and (max-height:500px){.os001-hero{min-height:0}}
+/* 4.4.4 Hero-Name: groesste Groesse, bei der kein Buchstabe Julians Mantel beruehrt (gemessen 1024-2560 px; Hochformat-Bild bleibt wie gehabt) */
+@media (min-aspect-ratio:4/5){.os001-hero .os026-hero.os029-title .os026-hero-name{font-size:min(6.25vw,calc(8.33vw - 2.33vh - 6.0px))}}
+
+
+
+/* 4.4 Redaktioneller Einstieg: H1 unter dem Hero, Instrument Serif als Kontrast zur Display-Schrift.
+   4.4.1: ab Tablet als zentrierter Block (Zeilen zentriert, Breite = Seite minus 4vw je Seite); Handy unveraendert linksbuendig. */
+.os026-story .os4-vh{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+html body .os026-story h1.os4-title{font-family:"OS001 Instrument Serif","Times New Roman",Georgia,serif;font-weight:400;font-size:15vw;line-height:.95;letter-spacing:-.012em;margin:0 0 .5em}
+html body .os026-story h1.os4-title>.l{display:block}
+html body .os026-story h1.os4-title>.l.f::first-letter{text-transform:uppercase}
+html body .os026-story h1.os4-title+.os026-lead{margin-top:0}
+@media (min-width:768px){
+ html body .os026-story h1.os4-title{font-size:clamp(64px,8.2vw,160px);line-height:.93;margin:0 0 .42em;
+  margin-left:min(0px,calc(4vw - (100vw - 698px) / 2 - 24px));width:calc(100vw - 8vw);max-width:none;text-align:center}
+}
+@media (min-width:768px) and (max-aspect-ratio:4/5){html body .os026-story h1.os4-title{font-size:11.6vw}}
+
+
+
+/* 4.4.4 (Basis 4.4.3) Rhythmus nach Inhalt statt Raster (nur Lab-Seite). Keine Trennlinien, kein Ersatz fuer H2. */
+.os026-story{--sp-nah:clamp(56px,10.5vh,112px);--sp-mittel:clamp(88px,17vh,176px);--sp-weit:clamp(128px,26vh,260px);--sp-absatz:clamp(48px,8vh,80px);--sp-eng:clamp(36px,6vh,60px)}
+html body .os026-story .os026-sec[data-os4-pt=nah]{padding-top:var(--sp-nah)}
+html body .os026-story .os026-sec[data-os4-pt=mittel]{padding-top:var(--sp-mittel)}
+html body .os026-story .os026-sec[data-os4-pt=weit]{padding-top:var(--sp-weit)}
+html body .os026-story .os026-sec[data-os4-pt=absatz]{padding-top:0}
+html body .os026-story .os026-sec[data-os4-pb=nah]{padding-bottom:var(--sp-nah)}
+html body .os026-story .os026-sec[data-os4-pb=mittel]{padding-bottom:var(--sp-mittel)}
+html body .os026-story .os026-sec[data-os4-pb=weit]{padding-bottom:var(--sp-weit)}
+html body .os026-story .os026-sec[data-os4-pb=absatz]{padding-bottom:var(--sp-absatz)}
+html body .os026-story .os026-sec[data-os4-pt=eng]{padding-top:var(--sp-eng)}
+html body .os026-story .os026-sec[data-os4-pb=eng]{padding-bottom:var(--sp-eng)}
+/* Reste frueherer Scroll-Mechanik: ohne Funktion, daher ohne Hoehe */
+html body .os026-story .os026-threshold,html body .os026-story .os026-stop>.os026-threshold{height:0!important}
+html body .os026-story .os026-ts{padding-top:0;margin-bottom:0}
+html body .os026-story .os026-ts .os001-ts-word{display:none}
+html body .os026-story .os026-ts>.os026-sec{padding-top:var(--sp-mittel)}
+html body .os026-story .os026-ou{padding-top:0!important;padding-bottom:0!important}
+html body .os026-story .os026-bq{position:relative;top:auto}
+html body .os026-story .os026-nx{padding-top:var(--sp-weit)}
+html body .os026-story .os026-lf{padding-top:0}
+/* Polaroid-Gruppen: Luft um die Bilder statt Kastenrand */
+@media (min-aspect-ratio:4/5){
+ html body .os026-story .os026-full-dk[data-os4="group"]{--os4-gh:calc(var(--os4-pw) * 1.62)}
+ html body .os026-story .os026-pair-img[data-os4="group"]{--os4-gh:calc(var(--os4-pw) * 1.64)}
+ html body .os026-story [data-os4="group"] .os4-m{padding:0}
+}
+/* Polaroid-Stapel: Stapel-Effekt bleibt, Nachlauf nach der letzten Karte kurz */
+html body .os026-story .os026-stack-rest{height:14vh}
+/* Player: Abstand unten wie oben */
+html body .os026-story .os029-mp{margin-bottom:0;padding-bottom:0}
+/* Einstieg: Teaser auf der Titelachse */
+@media (min-width:768px){
+ html body .os026-story h1.os4-title+.os4-teaser{text-align:center;text-wrap:balance}
+}
+/* Polaroid-Stapel im Hochformat: Karte so hoch wie ihr Bild statt Bildschirmhoehe (sonst halbe Screens leer) */
+@media (max-aspect-ratio:4/5){
+ html body .os026-story .os026-card{height:80svh;top:10svh}
+ html body .os026-story .os026-stack-rest{height:6vh}
+}
+@media (max-width:767px){
+ html body .os026-story .os026-card{height:60svh;top:20svh}
+ html body .os026-story .os026-card-1,html body .os026-story .os026-card-2,html body .os026-story .os026-card-3,html body .os026-story .os026-card-4{height:54svh}
+}
+
+/* ---------- 4.4.4 ---------- */
+/* Polaroid-Stapel Querformat: Karte haftet knapp unter der Navigation statt mittig, erstes Polaroid steht naeher am Text */
+@media (min-aspect-ratio:4/5){
+ html body .os026-story .os026-card{height:92vh;top:8vh}
+}
+/* Zweites Bildpaar (Cafe-Bank | gehend): gleiches Raster wie Bildpaar 1 */
+html body .os026-story .os026-pair[data-os4-pair="2"]>.os026-pair-img{height:110vh}
+@media (max-width:767px){
+ html body .os026-story .os026-pair[data-os4-pair="2"]>.os026-pair-img{height:auto}
+ html body .os026-story .os026-pair[data-os4-pair="2"]>[data-os4-side="l"]{aspect-ratio:3/4}
+ html body .os026-story .os026-pair[data-os4-pair="2"]>[data-os4-side="r"]{width:76%;margin-left:auto;aspect-ratio:2/3}
+}
+@media (min-width:768px) and (max-aspect-ratio:4/5){
+ html body .os026-story .os026-pair[data-os4-pair="2"]>.os026-pair-img{height:auto;aspect-ratio:2/3}
+}
+/* Video unter dem Baum + Zitat: Zitat rueckt an das Video, startet an der oberen Videokante */
+@media (min-width:768px) and (min-aspect-ratio:4/5){
+ html body .os026-story .os026-bq{height:auto;align-items:flex-start;justify-content:center;column-gap:clamp(40px,4vw,64px)}
+ html body .os026-story .os026-bq-img{flex:none;width:min(56.25vh,32vw);height:auto;aspect-ratio:9/16;max-height:none}
+ html body .os026-story .os026-bq-text{flex:0 1 auto;width:min(30vw,500px);padding:0}
+ html body .os026-story .os026-bq-quote{will-change:transform}
+}
+/* Grosse Aussage: Instrument Serif, Titelachse, Zeilen nach Sinnabschnitten */
+html body .os026-story .os001-nx-q.os4-nx{font-family:"OS001 Instrument Serif","Times New Roman",Georgia,serif;font-weight:400;letter-spacing:-.01em;
+ font-size:clamp(38px,10.6vw,60px);line-height:1.02;max-width:none;margin:0 24px;text-align:left;text-wrap:balance}
+html body .os026-story .os001-nx-q.os4-nx .os4-nl{display:inline}
+@media (min-width:768px){
+ html body .os026-story .os001-nx-q.os4-nx{font-size:clamp(48px,5.4vw,112px);line-height:1.02;margin:0 auto;width:calc(100vw - 8vw);text-align:center}
+ html body .os026-story .os001-nx-q.os4-nx .os4-nl{display:block}
+}
+@media (min-width:768px) and (min-aspect-ratio:4/5){html body .os026-story .os001-nx-q.os4-nx .os4-nl{white-space:nowrap}}
+/* Musik: Player steht so nah am Text wie das folgende Video */
+html body .os026-story .os029-mp{padding-top:0;margin-top:0}
+/* Titel auf der Mittelachse der Textspalte statt Seitenrechnung (Tablet lag 45 px neben der Teaser-Achse) */
+@media (min-width:768px){html body .os026-story h1.os4-title{margin-left:calc(50% - 46vw)}}
+/* 4.4.4 Einstieg T2: Titel etwas groesser, Teaser schmaler als der Titel; beide auf derselben Mittelachse */
+@media (min-width:768px) and (min-aspect-ratio:4/5){
+ html body .os026-story h1.os4-title{font-size:clamp(72px,9.6vw,184px);margin-bottom:.34em}
+ html body .os026-story h1.os4-title+.os4-teaser{max-width:22.5em;margin-left:auto;margin-right:auto}
+}
+@media (min-width:768px) and (max-aspect-ratio:4/5){
+ html body .os026-story h1.os4-title{font-size:13.2vw}
+ html body .os026-story h1.os4-title+.os4-teaser{max-width:22em;margin-left:auto;margin-right:auto}
+}
+
+
+
+/* 4.3.9 (Basis 4.3.8) Finaler Artikeltext (DE): Titel, Teaser, Kapitel-Ueberschriften und Abstaende der neuen Folge */
+.os026-story .os4-h1{font-family:"Cooper Bt Medium",Georgia,serif;font-weight:500;font-size:clamp(40px,4.4vw,74px);line-height:1.02;letter-spacing:-.015em;margin:0 0 32px}
+.os026-story .os4-h1+.os026-lead{font-size:clamp(21px,1.75vw,27px);line-height:1.34;letter-spacing:-.005em;margin-bottom:0}
+.os026-story .os4-chead{padding:clamp(96px,18vh,200px) 0 clamp(36px,6vh,72px)}
+.os026-story .os001-ou-q.os4-h2,.os026-story .os001-q-stop.os4-h2{font-family:"Inter 28 Pt",Arial,sans-serif;font-weight:800;font-size:clamp(40px,5.2vw,92px);line-height:.95;letter-spacing:-.03em;width:auto;max-width:15em;margin:0 0 0 4vw}
+.os026-story .os4-chead+.os026-sec,.os026-story .os001-ou-q.os4-h2+.os026-sec{padding-top:clamp(36px,6vh,72px)}
+html body .os026-story .os026-chapter .os026-ts{margin-bottom:0}
+html body .os026-story [data-os026-moment="04c-music"]{margin-bottom:14vh}
+.os026-story .os026-bq-quote.os4-bq-p{font-size:clamp(28px,2.6vw,44px);line-height:1.16}
+.os026-story .os001-nx-q.os4-nx{max-width:20em}
+/* 4.3.8 O1: Anzeigezeile P22 unter H1/H2, im Verhaeltnis 1,1–1,4 zu P21 · O2: Credits 12 px */
+.os026-story .os001-nx-q.os4-nx{font-size:clamp(30px,3.3vw,60px);line-height:1.12}
+.os026-story .os001-lf-list{font-size:12px}
+@media (max-width:767px){
+.os026-story .os4-h1{font-size:11vw;margin-bottom:24px}
+.os026-story .os001-ou-q.os4-h2,.os026-story .os001-q-stop.os4-h2{font-size:10.6vw;margin-left:6vw;max-width:88vw}
+.os026-story .os4-chead{padding-top:14vh}
+.os026-story .os026-bq-quote.os4-bq-p{font-size:26px}
+.os026-story .os001-nx-q.os4-nx{font-size:30px}
+html body .os026-story [data-os026-moment="04c-music"]{margin-bottom:10vh}
+}
+
+/* 4.3.9 Titel im Hero: Teaser als Vorspann direkt nach dem Hero */
+.os026-story .os026-lead.os4-teaser{font-size:clamp(21px,1.75vw,27px);line-height:1.34;letter-spacing:-.005em;margin:0}
+/* 4.3.9 Scrollrhythmus R1 (vor der Schlusszeile), R2 (vor dem ersten Kapitelkopf), R4 (Polaroid-Stapel auf dem Handy) */
+@media screen and (min-width:768px){html body .os026-story .os026-ou{padding-bottom:12vh}}
+@media (min-width:768px) and (max-aspect-ratio:4/5){html body .os026-story .os026-ou{padding-bottom:0}}
+html body .os026-story .os001-stb{padding-top:0}
+@media (max-width:767px){html body .os026-story .os026-stack-rest{height:20vh}}
+
+
+/* ---------- 4.4.6 (Basis 4.4.5) Dramaturgie, Credits, Card Stacks A/B. Nur Lab-Seite. ---------- */
+/* Video-Duo SL-15c | SL-16: beide Clips vollstaendig (9:16, kein Beschnitt), nebeneinander auf einer Mittelachse */
+html body .os026-story .os4-vpair{justify-content:center;align-items:flex-start;column-gap:clamp(24px,3vw,48px);height:auto}
+html body .os026-story .os4-vpair>.os026-pair-img{flex:none;width:auto;height:min(82vh,1040px);aspect-ratio:9/16}
+@media (min-width:768px) and (max-aspect-ratio:4/5){html body .os026-story .os4-vpair>.os026-pair-img{height:auto;width:42vw;aspect-ratio:9/16}}
+/* Musik: Text rueckt an den Player (unten so viel Luft wie oben) */
+html body .os026-story [data-os026-moment="04c-music"]{margin-bottom:0;padding-bottom:clamp(32px,5vh,64px)}
+/* 4.4.6 Uebergang letzter Polaroid-Stapel -> Musik: etwas mehr Luft, keine Kapitelpause */
+html body .os026-story [data-os4-stack="2"]{margin-bottom:clamp(64px,10vh,112px)}
+@media (max-width:767px){html body .os026-story [data-os4-stack="2"]{margin-bottom:clamp(56px,9svh,88px)}}
+/* 4.4.6 Credits: dezenter Abspann in der Artikel-Typografie (Inter 28 Pt, 15/20 px); Rolle Regular, Name SemiBold */
+html body .os026-story .os4-cr{padding:clamp(32px,5vh,56px) 0 clamp(56px,9vh,96px);text-align:center}
+html body .os026-story .os4-cr .os026-col::before{content:"";display:block;height:1px;background:currentColor;opacity:.18;margin:0 0 clamp(24px,3.5vh,32px)}
+html body .os026-story .os4-cr-h{margin:0 0 8px;font:700 17px/22px "Inter 28 Pt",Arial,sans-serif;letter-spacing:0;text-transform:uppercase}
+html body .os026-story .os4-cr-l{margin:0 0 4px;font:400 15px/20px "Inter 28 Pt",Arial,sans-serif;letter-spacing:0;text-transform:none;text-wrap:balance}
+html body .os026-story .os4-cr-r,html body .os026-story .os4-cr-n{white-space:nowrap}
+html body .os026-story .os4-cr-n{font-weight:600;color:inherit;text-decoration:none}
+html body .os026-story a.os4-cr-n[href]{padding:4px 0}
+html body .os026-story a.os4-cr-n[href]:hover,html body .os026-story a.os4-cr-n[href]:focus-visible{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;outline:none}
+/* ---------- 4.4.6 Card Stacks (eine Logik, zwei Varianten): A = Medienpaare (Mobile), B = Polaroid-Gruppen (Desktop + Mobile).
+   Haltung per sticky, Einschieben/Abdunkeln per Script (--stk-y / --stk-b). Ohne Script oder bei Reduced Motion: ruhige Darstellung untereinander. ---------- */
+/* ohne Stack (Reduced Motion): Medienpaare mobil untereinander, Polaroids mobil untereinander */
+@media (max-width:767px){
+ html body .os026-story .os026-pair[data-os4-ms]{display:block;height:auto;padding:0}
+ html body .os026-story .os026-pair[data-os4-ms]>.os4-msc{width:min(84vw,calc((100svh - var(--nav-h,57px) - 7svh) * var(--ms-ar,.6667)));height:auto;aspect-ratio:var(--ms-ar,.6667);margin:0 auto}
+ html body .os026-story .os026-pair[data-os4-ms]>.os4-msc+.os4-msc{margin-top:16px}
+ html body .os026-story [data-os4="group"]:not(.os4-stk-on){height:auto!important;min-height:0!important}
+ html body .os026-story [data-os4="group"]:not(.os4-stk-on)>.w-embed{position:relative;inset:auto}
+ html body .os026-story [data-os4="group"]:not(.os4-stk-on) .os4-m[data-kind="group"]{position:relative;inset:auto;overflow:visible;padding:2svh 0;display:flex;flex-direction:column;align-items:center;gap:16px}
+ html body .os026-story [data-os4="group"]:not(.os4-stk-on) .os4-pg{position:relative;left:auto;top:auto;transform:rotate(var(--rm,0deg))}
+}
+/* A Media Stack: Karten liegen uebereinander (gleiche Flussposition, Abstaende per Script) und haften oben */
+html body .os026-story .os026-pair.os4-stk-on{display:block!important;position:relative;height:auto;padding:0!important}
+html body .os026-story .os026-pair.os4-stk-on>.os4-msc{position:sticky;top:var(--stk-top,82px);z-index:1;transform:translate3d(0,var(--stk-y,0px),0)}
+html body .os026-story .os026-pair.os4-stk-on>.os4-msc>.w-embed>figure{filter:brightness(var(--stk-b,1))}
+/* B Polaroid Stack, Gruppen: der Bildrahmen haftet, die Polaroids schieben sich von unten darueber */
+html body .os026-story [data-os4="group"].os4-stk-on{min-height:0!important;overflow:visible!important}
+html body .os026-story [data-os4="group"].os4-stk-on>.w-embed{position:sticky;inset:auto;top:var(--stk-top,72px);height:var(--stk-fh,60vh)}
+html body .os026-story [data-os4="group"].os4-stk-on .os4-m[data-kind="group"]{position:absolute;inset:0;padding:0;overflow:visible}
+html body .os026-story [data-os4="group"].os4-stk-on .os4-pg{z-index:1;transform:translate(-50%,calc(-50% + var(--stk-y,0px))) rotate(var(--r,0deg));filter:brightness(var(--stk-b,1)) drop-shadow(0 16px 26px rgba(0,0,0,.28));will-change:transform}
+@media (max-width:767px){html body .os026-story [data-os4="group"].os4-stk-on .os4-pg{left:50%;top:50%;width:min(68vw,calc(var(--stk-fh,70svh) * .74));transform:translate(-50%,calc(-50% + var(--stk-y,0px))) rotate(var(--rm,0deg))}}
+/* B Polaroid Stack, bestehende Stapel (.os026-stack): Karten liegen uebereinander, Script schiebt sie ein */
+html body .os026-story .os026-stack.os4-stk-on{position:relative}
+html body .os026-story .os026-stack.os4-stk-on>.os026-card{position:sticky;top:var(--stk-top,72px);transform:translate3d(0,var(--stk-y,0px),0)}
+html body .os026-story .os026-stack.os4-stk-on>.os026-card>[data-os4="polaroid"]{filter:brightness(var(--stk-b,1))}
+html body .os026-story .os026-stack.os4-stk-on>.os026-stack-rest{display:none}
+/* 4.4.6b Bildflaeche steht vor dem Laden fest (vorher width/height auto = 0 x 0 px bis zum Laden; Lazy-Load mitten im Stapel verschob die Karte).
+   Breite = sizes-Wert des Bildes (= bisherige Darstellungsgroesse), Hoehe aus width/height-Attributen, Begrenzung wie bisher */
+html body .os026-story .os026-stack.os4-stk-on .os4-m[data-kind="polaroid"] img{width:min(100%,var(--pgw,40vw));height:auto;max-width:none;max-height:100%}
+html body .os026-story .os026-stack.os4-stk-on .os026-card-1,html body .os026-story .os026-stack.os4-stk-on .os026-card-2{--pgw:40vw}
+html body .os026-story .os026-stack.os4-stk-on .os026-card-3{--pgw:32vw}
+html body .os026-story .os026-stack.os4-stk-on .os026-card-4{--pgw:44vw}
+@media (max-width:767px){html body .os026-story .os026-stack.os4-stk-on .os026-card-1,html body .os026-story .os026-stack.os4-stk-on .os026-card-2{--pgw:64vw}html body .os026-story .os026-stack.os4-stk-on .os026-card-3{--pgw:54vw}html body .os026-story .os026-stack.os4-stk-on .os026-card-4{--pgw:70vw}}
+/* Mobile: Abstand Zitat -> grosse Aussage wie zwischen anderen Abschnitten (vorher weit, ca. 225 px) */
+@media (max-width:767px){html body .os026-story .os026-nx{padding-top:var(--sp-mittel)}}
+/* Titel "Neues wagen, ohne sich zu verbiegen": zwei Sinnzeilen; wo die zweite nicht passt (Tablet hoch, Handy), bricht sie ausgewogen */
+html body .os026-story h1.os4-title>.l{text-wrap:balance}
+@media (min-width:768px) and (max-aspect-ratio:4/5){html body .os026-story h1.os4-title{font-size:11vw}}
+/* Teaser: keine einzelnen Woerter in der letzten Zeile */
+html body .os026-story .os4-teaser{text-wrap:pretty}
+
+.ssmp{--ssmp-face: #d4d0c8;--ssmp-light: #ffffff;--ssmp-shadow: #808080;--ssmp-dark: #404040;--ssmp-pane: #ecebe6;--ssmp-window: #ffffff;--ssmp-text: #000000;--ssmp-gray-text: #6f6c66;--ssmp-highlight: #0a246a;--ssmp-highlight-text: #ffffff;--ssmp-title-a: #0a246a;--ssmp-title-b: #a6caf0;--ssmp-rule: #aca899;--ssmp-gridline: #e6e4de;--ssmp-info: #ffffe1;--ssmp-desktop-text: #ffffff;--ssmp-raised: inset -1px -1px var(--ssmp-dark), inset 1px 1px var(--ssmp-light), inset -2px -2px var(--ssmp-shadow), inset 2px 2px var(--ssmp-face);--ssmp-pressed: inset 1px 1px var(--ssmp-dark), inset -1px -1px var(--ssmp-light), inset 2px 2px var(--ssmp-shadow), inset -2px -2px var(--ssmp-face);--ssmp-frame: inset -1px -1px var(--ssmp-dark), inset 1px 1px var(--ssmp-face), inset -2px -2px var(--ssmp-shadow), inset 2px 2px var(--ssmp-light);--ssmp-sunken: inset 1px 1px var(--ssmp-shadow), inset -1px -1px var(--ssmp-light), inset 2px 2px var(--ssmp-dark), inset -2px -2px var(--ssmp-face);--ssmp-thin-up: inset -1px -1px var(--ssmp-shadow), inset 1px 1px var(--ssmp-light);--ssmp-thin-down: inset 1px 1px var(--ssmp-shadow), inset -1px -1px var(--ssmp-light);--ssmp-dither: repeating-conic-gradient(var(--ssmp-light) 0 25%, var(--ssmp-face) 0 50%) 0 0 / 2px 2px;--ssmp-font: Tahoma, Verdana, "Segoe UI", Geneva, sans-serif;container:ssmp / inline-size;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;max-width:var(--ssmp-max-w, 1200px);min-height:var(--ssmp-stage-min-h, 0px);margin-inline:auto;font:11px/1.2 var(--ssmp-font);color:var(--ssmp-text);-webkit-font-smoothing:none;-webkit-text-size-adjust:100%;text-size-adjust:100%}.ssmp.is-floating{display:block}.ssmp *,.ssmp *:before,.ssmp *:after{box-sizing:border-box}:where(.ssmp) button{font:inherit;color:inherit;margin:0;border:0;border-radius:0;background:none;padding:0;cursor:inherit;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-tap-highlight-color:transparent}:where(.ssmp) :is(h1,h2,h3,h4,h5,p,ul){margin:0;padding:0;font:inherit}:where(.ssmp) ul{list-style:none}:where(.ssmp) img{display:block;max-width:none;-webkit-user-drag:none}:where(.ssmp) a{-webkit-user-drag:none}.ssmp :where(button,[type=button]){cursor:inherit;-webkit-appearance:none;-moz-appearance:none;appearance:none}.ssmp :where(img){vertical-align:baseline}.ssmp>*{--ssmp-fs: 11px;--ssmp-fs-h1: 16px;--ssmp-fs-h2: 12px;--ssmp-title-h: 18px;--ssmp-title-fs: 11px;--ssmp-cap-w: 16px;--ssmp-cap-h: 14px;--ssmp-glyph: 1;--ssmp-menu-h: 18px;--ssmp-menu-px: 6px;--ssmp-mitem-h: 18px;--ssmp-tool-w: 24px;--ssmp-tool-h: 23px;--ssmp-icon: 1;--ssmp-pad-y: 12px;--ssmp-pad-x: 16px;--ssmp-tile: 164px;--ssmp-gap-x: 20px;--ssmp-gap-y: 18px;--ssmp-win-w: 440px;--ssmp-hero-max: 560px;--ssmp-client-min: 0px;--ssmp-client-max: max(320px, calc(100svh - 170px) );--ssmp-max-h: max(520px, min(880px, calc(100svh - 48px) ));--ssmp-status-h: 20px;--ssmp-th-h: 18px;--ssmp-row-h: 40px;--ssmp-thumb: 32px;--ssmp-btn-h: 23px;font-size:var(--ssmp-fs)}@container ssmp (max-width: 899.98px){.ssmp>*{--ssmp-fs: 12px;--ssmp-fs-h1: 18px;--ssmp-fs-h2: 13px;--ssmp-title-h: 22px;--ssmp-title-fs: 12px;--ssmp-cap-w: 21px;--ssmp-cap-h: 18px;--ssmp-glyph: 1.5;--ssmp-menu-h: 24px;--ssmp-menu-px: 8px;--ssmp-mitem-h: 28px;--ssmp-tool-w: 32px;--ssmp-tool-h: 30px;--ssmp-icon: 1.5;--ssmp-pad-y: 14px;--ssmp-pad-x: 18px;--ssmp-tile: 156px;--ssmp-gap-x: 18px;--ssmp-win-w: 480px;--ssmp-max-h: max(520px, min(960px, calc(100svh - 48px) ));--ssmp-status-h: 24px;--ssmp-th-h: 24px;--ssmp-row-h: 48px;--ssmp-thumb: 40px;--ssmp-btn-h: 28px}}@container ssmp (max-width: 599.98px){.ssmp>*{--ssmp-fs: 13px;--ssmp-fs-h1: 18px;--ssmp-fs-h2: 14px;--ssmp-title-h: 26px;--ssmp-title-fs: 13px;--ssmp-cap-w: 26px;--ssmp-cap-h: 22px;--ssmp-glyph: 1.5;--ssmp-menu-h: 30px;--ssmp-menu-px: 10px;--ssmp-mitem-h: 36px;--ssmp-tool-w: 38px;--ssmp-tool-h: 34px;--ssmp-pad-y: 12px;--ssmp-pad-x: 12px;--ssmp-tile: 136px;--ssmp-gap-x: 12px;--ssmp-gap-y: 16px;--ssmp-win-w: 100%;--ssmp-client-max: none;--ssmp-max-h: calc(100svh - 32px) ;--ssmp-status-h: 28px;--ssmp-th-h: 28px;--ssmp-row-h: 56px;--ssmp-thumb: 44px;--ssmp-btn-h: 34px}}@container ssmp (max-width: 359.98px){.ssmp>*{--ssmp-title-fs: 12px;--ssmp-cap-w: 24px;--ssmp-cap-h: 21px;--ssmp-pad-x: 10px;--ssmp-gap-x: 10px}}.ssmp-window{position:relative;display:flex;flex-direction:column;width:min(100%,var(--ssmp-win-w));padding:4px;background:var(--ssmp-face);box-shadow:var(--ssmp-frame);outline:none;container:ssmpwin / inline-size;z-index:1;user-select:none;-webkit-user-select:none}.ssmp-window[hidden]{display:none}.ssmp-window.is-maximized{width:100%;height:var(--ssmp-max-h)}.ssmp-titlebar{display:flex;align-items:center;flex:none;height:var(--ssmp-title-h);padding:0 2px;background:linear-gradient(90deg,var(--ssmp-title-a),var(--ssmp-title-b));color:#fff;user-select:none;-webkit-user-select:none}.ssmp[data-mode=desktop]>.ssmp-window>.ssmp-titlebar{touch-action:none}.ssmp-titlebar__icon{display:flex;flex:none;width:16px;height:16px;margin:0 3px 0 1px}.ssmp-titlebar__text{flex:1;min-width:0;font-size:var(--ssmp-title-fs);font-weight:700;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ssmp-titlebar__buttons{display:flex;flex:none;margin-left:4px}.ssmp-capbtn{display:flex;align-items:center;justify-content:center;width:var(--ssmp-cap-w);height:var(--ssmp-cap-h);background:var(--ssmp-face);color:#000;box-shadow:var(--ssmp-raised)}.ssmp-capbtn>svg{transform:scale(var(--ssmp-glyph))}.ssmp-capbtn--close{margin-left:2px}.ssmp-capbtn:active{box-shadow:var(--ssmp-pressed)}.ssmp-capbtn:active>svg{transform:translate(1px,1px) scale(var(--ssmp-glyph))}.ssmp-capbtn:focus{outline:none}.ssmp-capbtn:focus-visible{outline:1px dotted #000;outline-offset:-4px}.ssmp-menubar{position:relative;z-index:20;display:flex;flex:none;padding:1px 0;user-select:none;-webkit-user-select:none}.ssmp-menubar__slot{position:relative}.ssmp-menu{height:var(--ssmp-menu-h);padding:0 var(--ssmp-menu-px)}.ssmp-menu u{text-decoration:underline;text-underline-offset:1px}@media (hover: hover){.ssmp-menu:hover{box-shadow:var(--ssmp-thin-up)}}.ssmp-menu:active,.ssmp-menu[aria-expanded=true]{box-shadow:var(--ssmp-thin-down);padding:1px calc(var(--ssmp-menu-px) - 1px) 0 calc(var(--ssmp-menu-px) + 1px)}.ssmp-menu:focus{outline:none}.ssmp-menu:focus-visible{outline:1px dotted #000;outline-offset:-3px}.ssmp-dropdown{position:absolute;top:100%;left:0;min-width:152px;padding:3px;background:var(--ssmp-face);box-shadow:var(--ssmp-frame)}.ssmp-mitem{display:flex;align-items:center;width:100%;height:var(--ssmp-mitem-h);padding:0 18px 0 0;text-align:left;white-space:nowrap}.ssmp-mitem__mark{display:flex;align-items:center;justify-content:center;flex:none;width:20px}.ssmp-mitem:focus,.ssmp-mitem:hover{outline:none;background:var(--ssmp-highlight);color:var(--ssmp-highlight-text)}.ssmp-toolbar{display:flex;align-items:center;flex:none;gap:1px;padding:2px;border-top:1px solid var(--ssmp-shadow);box-shadow:inset 0 1px var(--ssmp-light);user-select:none;-webkit-user-select:none}.ssmp-toolbar__grip{width:3px;height:calc(var(--ssmp-tool-h) - 1px);margin:0 4px 0 1px;box-shadow:var(--ssmp-thin-up)}.ssmp-toolbar__sep{width:2px;height:calc(var(--ssmp-tool-h) - 1px);margin:0 4px;box-shadow:inset 1px 0 var(--ssmp-shadow),inset -1px 0 var(--ssmp-light)}.ssmp-tool{display:flex;align-items:center;justify-content:center;width:var(--ssmp-tool-w);height:var(--ssmp-tool-h)}.ssmp-tool>svg{transform:scale(var(--ssmp-icon))}@media (hover: hover){.ssmp-tool:hover{box-shadow:var(--ssmp-thin-up)}}.ssmp-tool:active{box-shadow:var(--ssmp-thin-down)}.ssmp-tool:active>svg,.ssmp-tool[aria-pressed=true]>svg{transform:translate(1px,1px) scale(var(--ssmp-icon))}.ssmp-tool[aria-pressed=true]{background:var(--ssmp-dither);box-shadow:var(--ssmp-thin-down)}.ssmp-tool:focus{outline:none}.ssmp-tool:focus-visible{outline:1px dotted #000;outline-offset:-4px}.ssmp-client{display:flex;flex:none;min-height:var(--ssmp-client-min);max-height:var(--ssmp-client-max);margin-top:1px;padding:2px;box-shadow:var(--ssmp-sunken);background:var(--ssmp-pane)}.ssmp-client--playlist{max-height:none}.ssmp-window.is-maximized .ssmp-client,.ssmp-window.is-sized .ssmp-client{flex:1 1 auto;min-height:0;max-height:none}.ssmp-library{flex:1;min-width:0;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;padding:var(--ssmp-pad-y) var(--ssmp-pad-x) calc(var(--ssmp-pad-y) + 8px);background:var(--ssmp-pane)}.ssmp-library__head{padding-bottom:8px;margin-bottom:12px;border-bottom:1px solid var(--ssmp-rule);box-shadow:0 1px 0 var(--ssmp-light)}.ssmp-library__title{font-size:var(--ssmp-fs-h1);font-weight:700;line-height:1.25}.ssmp-library__sub{margin-top:2px;color:var(--ssmp-gray-text)}.ssmp-section{font-size:var(--ssmp-fs-h2);font-weight:700;line-height:1.3;padding-bottom:3px;margin-bottom:12px;border-bottom:1px solid var(--ssmp-rule);box-shadow:0 1px 0 var(--ssmp-light)}.ssmp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--ssmp-tile),1fr));gap:var(--ssmp-gap-y) var(--ssmp-gap-x);justify-content:start}.ssmp-tile{min-width:0}.ssmp-tile__hit{display:block;width:100%;text-align:left;color:inherit;text-decoration:none}.ssmp-tile__cover{display:block;width:100%;aspect-ratio:1 / 1;border:1px solid #7d7a73;background:#1a1a1a;box-shadow:2px 2px #00000029}.ssmp-tile__cover img{width:100%;height:100%;object-fit:cover}.ssmp-tile__label{display:inline-block;max-width:100%;margin-top:5px;padding:1px 2px;vertical-align:top}.ssmp-tile__artist,.ssmp-tile__meta{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ssmp-tile__artist{font-weight:700}.ssmp-tile__meta{margin-top:1px;color:var(--ssmp-gray-text)}@media (hover: hover){.ssmp-tile__hit:hover .ssmp-tile__cover{border-color:var(--ssmp-highlight)}.ssmp-tile__hit:hover .ssmp-tile__artist{text-decoration:underline}}.ssmp-tile__hit:focus{outline:none}.ssmp-tile__hit[data-selected] .ssmp-tile__label{background:var(--ssmp-face)}.ssmp-grid:focus-within .ssmp-tile__hit[data-selected] .ssmp-tile__label{background:var(--ssmp-highlight);color:var(--ssmp-highlight-text)}.ssmp-grid:focus-within .ssmp-tile__hit[data-selected] .ssmp-tile__meta{color:inherit}.ssmp-tile__hit:focus-visible .ssmp-tile__label{outline:1px dotted #fff;outline-offset:-1px}.ssmp-tile__hit:focus-visible .ssmp-tile__cover{border-color:var(--ssmp-highlight)}.ssmp-hero{margin-bottom:4px}.ssmp-tile__hit--hero{width:auto;max-width:100%}.ssmp-hero{--ssmp-hero-h: calc(100svh - 330px) }.ssmp-window.is-sized .ssmp-client,.ssmp-window.is-maximized .ssmp-client{container:ssmpclient / size}.ssmp-window.is-sized .ssmp-hero,.ssmp-window.is-maximized .ssmp-hero{--ssmp-hero-h: calc(100cqh - 170px) }.ssmp-tile__hit--hero .ssmp-tile__cover{width:min(100%,var(--ssmp-hero-max),max(160px,var(--ssmp-hero-h)))}.ssmp-tile__hit--hero .ssmp-tile__label{margin-top:6px}.ssmp-tile__hit--hero .ssmp-tile__artist{font-size:var(--ssmp-fs-h2)}.ssmp-section--more{margin-top:18px}.ssmp-listview{padding:2px;background:var(--ssmp-window);box-shadow:var(--ssmp-sunken)}.ssmp-details{width:100%;border-collapse:separate;border-spacing:0;table-layout:fixed;background:var(--ssmp-window)}.ssmp-details th{height:var(--ssmp-th-h);padding:0 6px;font-weight:400;text-align:left;background:var(--ssmp-face);box-shadow:var(--ssmp-raised);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;user-select:none;-webkit-user-select:none}.ssmp-details th.ssmp-c-cover{width:calc(var(--ssmp-thumb) + 16px)}.ssmp-details th.ssmp-c-tracks{width:72px}.ssmp-details td{height:var(--ssmp-row-h);padding:0 6px;vertical-align:middle;border-bottom:1px solid var(--ssmp-gridline);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ssmp-details__thumb{width:var(--ssmp-thumb);height:var(--ssmp-thumb);border:1px solid #7d7a73;object-fit:cover;background:#1a1a1a}.ssmp-details__name,.ssmp-details__sub{display:block;overflow:hidden;text-overflow:ellipsis}.ssmp-details__sub{display:none;color:var(--ssmp-gray-text);margin-top:2px}.ssmp-details tbody tr:focus{outline:none}.ssmp-details tbody tr[aria-selected=true] td{background:var(--ssmp-face)}.ssmp-listview:focus-within tbody tr[aria-selected=true] td{background:var(--ssmp-highlight);color:var(--ssmp-highlight-text)}.ssmp-listview:focus-within tbody tr[aria-selected=true] .ssmp-details__sub{color:inherit}.ssmp-details tbody tr:focus-visible td:last-child{outline:1px dotted #fff;outline-offset:-2px}@media (hover: hover){.ssmp-details tbody tr:hover .ssmp-details__name{text-decoration:underline}}@container ssmpwin (max-width: 519.98px){.ssmp-details .ssmp-c-release{display:none}.ssmp-details th.ssmp-c-tracks{width:64px}.ssmp-details__name{font-weight:700}.ssmp-details__sub{display:block}}@container ssmpwin (max-width: 519.98px){.ssmp-library{--ssmp-pad-x: 10px}.ssmp-statusbar__field:not(.ssmp-statusbar__field--main){min-width:64px}}.ssmp-statusbar{display:flex;align-items:stretch;gap:2px;flex:none;height:var(--ssmp-status-h);margin-top:2px;user-select:none;-webkit-user-select:none}.ssmp-statusbar__field{display:flex;align-items:center;min-width:0;padding:0 4px;box-shadow:var(--ssmp-thin-down);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ssmp-statusbar__field:not(.ssmp-statusbar__field--main){flex:none;min-width:84px}.ssmp-statusbar__field--main{flex:1}.ssmp-statusbar__grip{flex:none;width:14px;height:14px;align-self:flex-end;margin-left:-2px;touch-action:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' shape-rendering='crispEdges'%3E%3Cg fill='%23fff'%3E%3Crect x='11' y='0' width='1' height='1'/%3E%3Crect x='10' y='1' width='1' height='1'/%3E%3Crect x='9' y='2' width='1' height='1'/%3E%3Crect x='8' y='3' width='1' height='1'/%3E%3Crect x='7' y='4' width='1' height='1'/%3E%3Crect x='6' y='5' width='1' height='1'/%3E%3Crect x='5' y='6' width='1' height='1'/%3E%3Crect x='4' y='7' width='1' height='1'/%3E%3Crect x='3' y='8' width='1' height='1'/%3E%3Crect x='2' y='9' width='1' height='1'/%3E%3Crect x='1' y='10' width='1' height='1'/%3E%3Crect x='0' y='11' width='1' height='1'/%3E%3Crect x='11' y='4' width='1' height='1'/%3E%3Crect x='10' y='5' width='1' height='1'/%3E%3Crect x='9' y='6' width='1' height='1'/%3E%3Crect x='8' y='7' width='1' height='1'/%3E%3Crect x='7' y='8' width='1' height='1'/%3E%3Crect x='6' y='9' width='1' height='1'/%3E%3Crect x='5' y='10' width='1' height='1'/%3E%3Crect x='4' y='11' width='1' height='1'/%3E%3Crect x='11' y='8' width='1' height='1'/%3E%3Crect x='10' y='9' width='1' height='1'/%3E%3Crect x='9' y='10' width='1' height='1'/%3E%3Crect x='8' y='11' width='1' height='1'/%3E%3C/g%3E%3Cg fill='%23808080'%3E%3Crect x='11' y='1' width='1' height='2'/%3E%3Crect x='10' y='2' width='1' height='2'/%3E%3Crect x='9' y='3' width='1' height='2'/%3E%3Crect x='8' y='4' width='1' height='2'/%3E%3Crect x='7' y='5' width='1' height='2'/%3E%3Crect x='6' y='6' width='1' height='2'/%3E%3Crect x='5' y='7' width='1' height='2'/%3E%3Crect x='4' y='8' width='1' height='2'/%3E%3Crect x='3' y='9' width='1' height='2'/%3E%3Crect x='2' y='10' width='1' height='2'/%3E%3Crect x='1' y='11' width='1' height='1'/%3E%3Crect x='11' y='5' width='1' height='2'/%3E%3Crect x='10' y='6' width='1' height='2'/%3E%3Crect x='9' y='7' width='1' height='2'/%3E%3Crect x='8' y='8' width='1' height='2'/%3E%3Crect x='7' y='9' width='1' height='2'/%3E%3Crect x='6' y='10' width='1' height='2'/%3E%3Crect x='5' y='11' width='1' height='1'/%3E%3Crect x='11' y='9' width='1' height='2'/%3E%3Crect x='10' y='10' width='1' height='2'/%3E%3Crect x='9' y='11' width='1' height='1'/%3E%3C/g%3E%3C/svg%3E") no-repeat right bottom}.ssmp-tooltip{position:absolute;z-index:40;padding:2px 4px;background:var(--ssmp-info);border:1px solid #000;color:#000;white-space:nowrap;pointer-events:none}.ssmp-modal{position:absolute;top:0;right:0;bottom:0;left:0;z-index:30;display:flex;align-items:center;justify-content:center;padding:12px}.ssmp-dialog{width:min(360px,100%);padding:3px;background:var(--ssmp-face);box-shadow:var(--ssmp-frame)}.ssmp-dialog .ssmp-titlebar{padding-left:4px}.ssmp-dialog__body{display:flex;gap:14px;padding:14px 12px 6px}.ssmp-dialog__icon{flex:none;width:32px;height:32px}.ssmp-dialog__text{min-width:0;line-height:1.4}.ssmp-dialog__text p+p{margin-top:6px}.ssmp-dialog__lead{font-weight:700}.ssmp-dialog__actions{display:flex;justify-content:flex-end;padding:8px 10px 9px}.ssmp-btn{min-width:75px;height:var(--ssmp-btn-h);padding:0 12px;background:var(--ssmp-face);box-shadow:var(--ssmp-raised)}.ssmp-btn--default{box-shadow:inset 0 0 0 1px #000,inset -2px -2px var(--ssmp-dark),inset 2px 2px var(--ssmp-light),inset -3px -3px var(--ssmp-shadow),inset 3px 3px var(--ssmp-face)}.ssmp-btn:active{box-shadow:inset 0 0 0 1px #000,inset 0 0 0 2px var(--ssmp-shadow);padding:2px 11px 0 13px}.ssmp-btn--link,.ssmp-btn--back{display:inline-flex;align-items:center;justify-content:center;gap:6px;color:#000;text-decoration:none;white-space:nowrap}.ssmp-btn--link:active,.ssmp-btn--back:active{box-shadow:var(--ssmp-pressed);padding:2px 11px 0 13px}.ssmp-btn:focus{outline:none}.ssmp-btn:focus-visible{outline:1px dotted #000;outline-offset:-5px}.ssmp-taskbar{display:inline-flex;padding:3px 4px;background:var(--ssmp-face);box-shadow:var(--ssmp-frame)}.ssmp-taskbtn{display:flex;align-items:center;gap:4px;min-width:168px;height:calc(var(--ssmp-btn-h) - 1px);padding:0 8px 0 4px;text-align:left;font-weight:700;box-shadow:var(--ssmp-raised)}.ssmp-taskbtn:active{box-shadow:var(--ssmp-pressed)}.ssmp-taskbtn:focus{outline:none}.ssmp-taskbtn:focus-visible .ssmp-taskbtn__text{outline:1px dotted #000;outline-offset:1px}.ssmp-taskbtn>svg{flex:none}.ssmp-deskicon{display:flex;flex-direction:column;align-items:center;gap:4px;width:104px;padding:4px 2px;color:var(--ssmp-desktop-text)}.ssmp-deskicon__img{display:block;width:32px;height:32px}.ssmp-deskicon__label{padding:1px 3px;text-align:center;text-shadow:1px 1px 0 #000}.ssmp-deskicon:focus{outline:none}.ssmp-deskicon:focus .ssmp-deskicon__label,.ssmp-deskicon:active .ssmp-deskicon__label{background:var(--ssmp-highlight);color:var(--ssmp-highlight-text);text-shadow:none;outline:1px dotted #fff;outline-offset:-1px}.ssmp ::-webkit-scrollbar{width:16px;height:16px}.ssmp ::-webkit-scrollbar-track{background:var(--ssmp-dither)}.ssmp ::-webkit-scrollbar-thumb{background:var(--ssmp-face);box-shadow:var(--ssmp-raised)}.ssmp ::-webkit-scrollbar-corner{background:var(--ssmp-face)}.ssmp ::-webkit-scrollbar-button:single-button{display:block;width:16px;height:16px;background-color:var(--ssmp-face);background-repeat:no-repeat;background-position:center;box-shadow:var(--ssmp-raised)}.ssmp ::-webkit-scrollbar-button:single-button:active{box-shadow:var(--ssmp-pressed)}.ssmp ::-webkit-scrollbar-button:single-button:vertical:decrement{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='4' shape-rendering='crispEdges'%3E%3Cpath d='M3 0h1v1h1v1h1v1h1v1H0V3h1V2h1V1h1z'/%3E%3C/svg%3E")}.ssmp ::-webkit-scrollbar-button:single-button:vertical:increment{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='4' shape-rendering='crispEdges'%3E%3Cpath d='M0 0h7v1H6v1H5v1H4v1H3V3H2V2H1V1H0z'/%3E%3C/svg%3E")}@supports not selector(::-webkit-scrollbar){.ssmp-library{scrollbar-color:var(--ssmp-face) #e9e7e2}}@media (prefers-reduced-motion: reduce){.ssmp *,.ssmp *:before,.ssmp *:after{transition:none!important;animation:none!important}}.ssmp-rz{position:absolute;z-index:6;touch-action:none}.ssmp-rz--n,.ssmp-rz--s{left:14px;right:14px;height:4px}.ssmp-rz--e,.ssmp-rz--w{top:14px;bottom:14px;width:4px}.ssmp-rz--n{top:0}.ssmp-rz--s{bottom:0}.ssmp-rz--w{left:0}.ssmp-rz--e{right:0}.ssmp-rz--nw,.ssmp-rz--ne,.ssmp-rz--sw,.ssmp-rz--se{width:14px;height:14px}.ssmp-rz--nw{top:0;left:0;clip-path:polygon(0 0,100% 0,100% 4px,4px 4px,4px 100%,0 100%)}.ssmp-rz--ne{top:0;right:0;clip-path:polygon(0 0,100% 0,100% 100%,calc(100% - 4px) 100%,calc(100% - 4px) 4px,0 4px)}.ssmp-rz--sw{bottom:0;left:0;clip-path:polygon(0 0,4px 0,4px calc(100% - 4px),100% calc(100% - 4px),100% 100%,0 100%)}.ssmp-rz--se{bottom:0;right:0;clip-path:polygon(calc(100% - 4px) 0,100% 0,100% 100%,0 100%,0 calc(100% - 4px),calc(100% - 4px) calc(100% - 4px))}.ssmp-playlist__nav{display:flex;align-items:center;gap:10px;padding-bottom:6px;margin-bottom:10px;border-bottom:1px solid var(--ssmp-rule);box-shadow:0 1px 0 var(--ssmp-light)}.ssmp-btn--back{min-width:0;padding:0 10px}.ssmp-playlist__crumb{min-width:0;color:var(--ssmp-gray-text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ssmp-playlist{display:flex;flex-direction:column}.ssmp-playlist__body{flex:1 1 auto;display:grid;grid-template-columns:180px minmax(0,1fr);gap:20px;align-items:stretch}.ssmp-playlist__info{display:flex;flex-direction:column;gap:10px;min-width:0}.ssmp-playlist__cover{display:block;width:100%;aspect-ratio:1 / 1;border:1px solid #7d7a73;background:#1a1a1a;box-shadow:2px 2px #00000029}.ssmp-playlist__cover img{width:100%;height:100%;object-fit:cover}.ssmp-playlist__text{display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-width:0}.ssmp-playlist__title{font-size:var(--ssmp-fs-h1);font-weight:700;line-height:1.25}.ssmp-playlist__meta{color:var(--ssmp-gray-text)}.ssmp-playlist__text .ssmp-btn--link{margin-top:8px}.ssmp-playlist__info{align-self:start}.ssmp-playlist__player{min-width:0;display:flex;flex-direction:column}@container ssmpwin (max-width: 639.98px){.ssmp-playlist__body{grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr;gap:12px}.ssmp-playlist__info{flex-direction:row;align-items:flex-start;gap:12px}.ssmp-playlist__cover{flex:none;width:88px}}.ssmp-embed{flex:1 1 auto;display:flex;flex-direction:column;padding:6px;background:var(--ssmp-face);box-shadow:var(--ssmp-sunken);line-height:0}.ssmp-embed iframe{display:block;flex:1 1 auto;width:100%;height:auto;min-height:352px}@media (hover: hover) and (pointer: fine){.ssmp-window,.ssmp-taskbar,.ssmp-deskicon{cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAARCAYAAAAL4VbbAAAAYElEQVR42q2RQQ7AIAgEdzf9/5e3l5JYKsKhJMZIZlQAAIxh6Nk9hm2PhLh5JGg9dIJy4iRol6wEVU/uBJ0KyoK6dq3CVUEkP54agOtSAhlCWWCA03Hz/RuW3SB+COcp3qahLQ+bkurwAAAAAElFTkSuQmCC) 0 0,default;cursor:-webkit-image-set(url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAARCAYAAAAL4VbbAAAAYElEQVR42q2RQQ7AIAgEdzf9/5e3l5JYKsKhJMZIZlQAAIxh6Nk9hm2PhLh5JGg9dIJy4iRol6wEVU/uBJ0KyoK6dq3CVUEkP54agOtSAhlCWWCA03Hz/RuW3SB+COcp3qahLQ+bkurwAAAAAElFTkSuQmCC) 1x,url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAiCAYAAABbXymAAAAAiklEQVR42s3VSwrAIAwE0Ezx/ldONwqhSI2an+BOw3MwSkTEfZqOh5yGLGwq9xczMzGzmTwkY1N5nNhKHi++leeJT+X54l15HbFWXk+8kruJ2+4GAMtD5IiHrOc3XZLSeRiZDJnIEDKzr3yyLkbctIIyPwhEt0BzP7VZu2aMko/QUff8Zb2q4SZ+AXVCVgyESk9sAAAAAElFTkSuQmCC) 2x) 0 0,default}.ssmp-tile__hit--link,.ssmp-row--link,.ssmp-btn--link{cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAATCAYAAACZZ43PAAAAc0lEQVR42tWTUQoAIQhEHdn7X3n2YxNKsqwgWCGIyOc0pkg/WNY0tJdMUkhKBqJyGP8ADA19ptmfmQKghmDrCa47rAHpvjtl1FHfTb7fhyZGlyJfDAAAyxCvoIFc+UilILQ9wx0FVr0HWFZxPEwIhied+wKfBDYNnR7u7AAAAABJRU5ErkJggg==) 5 0,pointer;cursor:-webkit-image-set(url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAATCAYAAACZZ43PAAAAc0lEQVR42tWTUQoAIQhEHdn7X3n2YxNKsqwgWCGIyOc0pkg/WNY0tJdMUkhKBqJyGP8ADA19ptmfmQKghmDrCa47rAHpvjtl1FHfTb7fhyZGlyJfDAAAyxCvoIFc+UilILQ9wx0FVr0HWFZxPEwIhied+wKfBDYNnR7u7AAAAABJRU5ErkJggg==) 1x,url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAmCAYAAAClI5npAAAAnklEQVR42u2YwRKAIAhE3cb//2U6VDPl2KQECg7c8hD4oG0VqT2oeEYSiC1NDrTunOgJAIAIiekEooAoIArIAu/4pZD+CVQUknpUd4kZ4JKBOQIq//s3MhcREwSoc5qrPf5a96cDt16pfBUmPSFxeshOfJI16YqHkDBDIA9HXpwnTFoyHIVCTAOW94Ss3ruw5UNmIQ4mfm5ItHJOJ7ADcOgtYg+3aKYAAAAASUVORK5CYII=) 2x) 5 0,pointer}.ssmp-window :is(input:not([type]),input[type=text],input[type=search],textarea){cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAYAAACJgPRIAAAARElEQVR42mP8////fwYCgIWBgYGBkZERLvD//38MPguMAQOMjIwMeA2HWv0f3QlMDESAUUX0VsSCK6kgixOVVBiJSXQAqXkrDeaw9XQAAAAASUVORK5CYII=) 4 9,text;cursor:-webkit-image-set(url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAYAAACJgPRIAAAARElEQVR42mP8////fwYCgIWBgYGBkZERLvD//38MPguMAQOMjIwMeA2HWv0f3QlMDESAUUX0VsSCK6kgixOVVBiJSXQAqXkrDeaw9XQAAAAASUVORK5CYII=) 1x,url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAkCAYAAACE7WrnAAAAVklEQVR42u2WwQoAIAhDXfT/v2wnbw2JdoiYJ6HxWHpwyMwMQY0Q1awGwFZQhrt3vSM2qnLSjVLnCOTzbJtML3NkkEEGGWSQQRd37TSNMP3HaQTPJbYFUYomQgJQm94AAAAASUVORK5CYII=) 2x) 4 9,text}.ssmp-rz--n,.ssmp-rz--s{cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAXCAYAAADduLXGAAAAbElEQVR42u2TMQ7AMAgDMeL/X6ZLLYHlDNk61FMI54QBI0Td3TwDwOylA8lM44IVdIZ04BhjGVIbqnlfY4wFyLhe75fdhs640A9/EC63t6cg1GnrZk1Puq2T1/fMzJoaWLOfGk4CCkZE4CbdD6mSTB8/T2JhAAAAAElFTkSuQmCC) 5 11,ns-resize;cursor:-webkit-image-set(url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAXCAYAAADduLXGAAAAbElEQVR42u2TMQ7AMAgDMeL/X6ZLLYHlDNk61FMI54QBI0Td3TwDwOylA8lM44IVdIZ04BhjGVIbqnlfY4wFyLhe75fdhs640A9/EC63t6cg1GnrZk1Puq2T1/fMzJoaWLOfGk4CCkZE4CbdD6mSTB8/T2JhAAAAAElFTkSuQmCC) 1x,url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAuCAYAAAAsnen7AAAAf0lEQVR42u2XwQrAMAhDm+H//7I77VK0uoJStngsNTxB24gRhKqqdQ4Aq7xrFAWypA/gXIBH3kfskRr3luT1xFnSLHkZsRj9+a5kp1v6iJ1Bc8naJ0+iCTruraAwhSlMYQpT+C/CEv3Gu07/HO+W9cv93m3XH3MH+eKed7w/vgGExEliNEZYoAAAAABJRU5ErkJggg==) 2x) 5 11,ns-resize}.ssmp-rz--e,.ssmp-rz--w{cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAAZklEQVR42rWSUQ7AIAhDKdn9r9z9iKlkJsMNviTa1wYxayxoQ5LzAsBbyE7n+UGBuaYcOjXyP8A7AzyBxbwMVj1I8mvizT/YFYeO5HNGYzyMtphy0YbedX1OEudRKM/zfp4aZHB73cVOWelJA4DnAAAAAElFTkSuQmCC) 11 5,ew-resize;cursor:-webkit-image-set(url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAALCAYAAACUPhZAAAAAZklEQVR42rWSUQ7AIAhDKdn9r9z9iKlkJsMNviTa1wYxayxoQ5LzAsBbyE7n+UGBuaYcOjXyP8A7AzyBxbwMVj1I8mvizT/YFYeO5HNGYzyMtphy0YbedX1OEudRKM/zfp4aZHB73cVOWelJA4DnAAAAAElFTkSuQmCC) 1x,url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAWCAYAAAC/kK73AAAAg0lEQVR42u2W4QrAIAiEM3r/V3a/hCGTW7BsF/o34vTrkmutKrckOlBVfbwgIisamdXrrMQHmtwGDoB8bwGnZ/148vzEI9LbPh8gT0tc3pLO9jjS5ye+29MT+/6crVIeT80qaLvcXmRpVol0fXbh97hNYpMjz2dtjygl9srjlcer/lkXzLhbGSK8fjAAAAAASUVORK5CYII=) 2x) 11 5,ew-resize}.ssmp-rz--nw,.ssmp-rz--se,.ssmp-statusbar__grip{cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAbUlEQVR42pVTSRLAIAgzTP//5fRSHaYGjNwUsxgUJDmKAoDR1PMd2hoN56pQmw5QgifwZHkDk1xXoCEff8UbglBWXQIUgXFOocugDKUiyE7aRBVBXkcHVhlk93EahyKwwdm69TyFev0xDHXZeAHfQFERw0NNZgAAAABJRU5ErkJggg==) 7 7,nwse-resize;cursor:-webkit-image-set(url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAbUlEQVR42pVTSRLAIAgzTP//5fRSHaYGjNwUsxgUJDmKAoDR1PMd2hoN56pQmw5QgifwZHkDk1xXoCEff8UbglBWXQIUgXFOocugDKUiyE7aRBVBXkcHVhlk93EahyKwwdm69TyFev0xDHXZeAHfQFERw0NNZgAAAABJRU5ErkJggg==) 1x,url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAiElEQVR42t3XwQrAIAgAUB37/192JyEEN1NJnbeQDi+0DImIwBGIiBCIC4riXgSmDc4Daig+Je0vltJoNfcVs5SBvOa+H9vHuAheq1fLe+X1Yu0ulvkseZ144+ZKlfcXe+VaDc0R78q1/DyxVS6LfL74S669ev1nrqh03pRp+Fn8bK7OnrvLxA97fmAtIWooXQAAAABJRU5ErkJggg==) 2x) 7 7,nwse-resize}.ssmp-rz--ne,.ssmp-rz--sw{cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAYklEQVR42pWTSQ7AMAgDGdT/f5meUmVDtbmSMbFJiJ+qqup6TwgF3EQjFbgbnsJUOoFUPQOHQLrgLJAOuFvABZc85j0CqOB37dFzwMXzOKOCR2AOeE17t2DB3VtuP4Yw5Fovb9ROGcKwIBAAAAAASUVORK5CYII=) 7 7,nesw-resize;cursor:-webkit-image-set(url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAYklEQVR42pWTSQ7AMAgDGdT/f5meUmVDtbmSMbFJiJ+qqup6TwgF3EQjFbgbnsJUOoFUPQOHQLrgLJAOuFvABZc85j0CqOB37dFzwMXzOKOCR2AOeE17t2DB3VtuP4Yw5Fovb9ROGcKwIBAAAAAASUVORK5CYII=) 1x,url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAjklEQVR42t3WUQqAMAwD0GXs/leOPxNECK5bRzv7qag8w0pQFockZ56rJWia14sAjP6hWLHbh0kWS9xhYjiKOZJ5eMZtl/S+rOTnZfwlVec8PGPskqLfULs8v9gqzbu5VAYqo1VpHrH1HM5K8zUQtWu9pHk71y5puLiOtMcnkn3+K1byY8Xt3f6OK/TWuQCZm2AyKAJTkAAAAABJRU5ErkJggg==) 2x) 7 7,nesw-resize}}.ssmp-consent{flex:1 1 auto;display:flex;flex-direction:column;gap:8px;padding:12px;background:var(--ssmp-face);box-shadow:var(--ssmp-sunken)}.ssmp-consent__text{max-width:46em;line-height:1.35}.ssmp-consent__link{color:#00e;text-decoration:underline}.ssmp-consent__link:visited{color:#551a8b}.ssmp-consent__link:focus{outline:none}.ssmp-consent__link:focus-visible{outline:1px dotted #000;outline-offset:1px}.ssmp-consent__actions{display:flex;gap:8px;margin-top:4px}
+
+/* OFF SCRIPT – Mega-Dropdown dunkel bei dunkler Navigation (analog body.has-layout-selected, nur auf OFF-SCRIPT-Seiten geladen) */html.theme-dark .nav-mega{background:#000;color:#fff;border-top-color:rgba(255,255,255,.12)}html.theme-dark .nav-panel{background:#000;color:#fff}html.theme-dark .nav-dd-item,html.theme-dark .nav-dd-title{color:#fff}html.theme-dark [data-mega].is-mega-active{color:#fff!important}/* OFF SCRIPT – Links im Fliesstext: Textfarbe, feine Unterstreichung (wie Credits-Hover) */html body .os026-story .os026-p a[href]{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}html body .os026-story .os026-p a[href]:hover{text-decoration-thickness:2px}html body .os026-story .os026-p a[href]:focus-visible{outline:1px solid currentColor;outline-offset:2px}
+.os030-sounds{padding:24px 16px}.os030-sounds .ssmp{--ssmp-stage-min-h:calc(100svh - 48px)}@media (max-width:599px){.os030-sounds{padding:16px}.os030-sounds .ssmp{--ssmp-stage-min-h:0px}}.os030-sounds.is-mounted .os030-sounds__fallback{display:none}.os030-sounds__fallback{max-width:440px;margin:0 auto;color:#fff;font:15px/1.5 "Inter 28 Pt",Arial,sans-serif}.os030-sounds__fallback img{display:block;width:100%;height:auto}.os030-sounds__fallback p{margin:12px 0}.os030-sounds__fallback ol{margin:0 0 12px;padding-left:1.4em}.os030-sounds__fallback a{color:inherit;text-decoration:underline}
+
+/* 4.0 Palette aus dem Material: Schwarz (unveraendert) · Ziegel · Sand · Creme */
+:root{--os-black:#000000;--os-red:#8E4C36;--os-red-deep:#5C2E20;--os-red-hi:#B87A62;--os-red-off:#2E1A13;--os-red-glow:rgba(142,76,54,.7);--os-yellow:#C9B48E;--os-white:#EAE4D8}
+.os001-bglayer{position:fixed;top:0;left:0;width:100%;height:100vh;height:100lvh;z-index:-1;pointer-events:none;background-color:var(--os-black)}
+html.os-grain .os001-bglayer::after{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:220px;opacity:.07;mix-blend-mode:overlay}
+.os026-story.is-bglive{clip-path:inset(0)}
+.os026-story.is-bglive .os001-stb{background-color:transparent}
+.os026-story .os001-stb{padding-bottom:0}
+/* Grundfarben vor dem Start der Engine (Kapitel A ist Schwarz); danach setzt die Engine die Ink-Farbe pro Element */
+.os026-story .os026-hero-name,.os026-story .os001-q-stop,.os026-story .os001-ou-q{color:var(--os-white)}
+.os026-story .os001-ts-word,.os026-story .os001-ey-pull,.os026-story .os026-bq-quote{color:var(--os-yellow)}
+.os026-stop .os026-p-dk{color:var(--os-yellow);font-family:"Cooper Bt Medium",Georgia,serif;font-size:30px;line-height:1.2;font-weight:500}
+.os026-nx .os026-p-dk{color:var(--os-yellow)}
+@media screen and (max-width:767px){.os026-stop .os026-p-dk{font-size:24px}}
+.os026-story .os026-ts{padding-top:8vh}
+/* 2.9.1 Ruhezone nach der Musik-Bruecke: der Raum wird dunkel (C2), dann erscheint der Player auf Schwarz */
+.os026-story .os026-ts{margin-bottom:75vh}
+html.os-quiet-short .os026-story .os026-ts{margin-bottom:45vh}
+@media screen and (max-width:767px){html.os-quiet-short .os026-story .os026-ts{margin-bottom:60vh}}
+/* 4.2 Raum vor Next: kuerzer (keine Football-Flaeche mehr davor); Ziegel -> Schwarz laeuft hier aus, bevor SL-18 erscheint */
+html:not(.os-quiet-short) .os026-story [data-os026-moment="11-12-next-last-frame"]>.os026-threshold{height:25vh}
+/* 2.9.1c: keine dekorative rote Versatzflaeche mehr hinter SL-12 (Story Red nur ueber die Farbdramaturgie) */
+.os026-story .os026-cap,.os026-story .os026-ou{position:relative;z-index:2}
+.os026-story .os026-bq-quote{transform-origin:0% 100%}
+@media screen and (min-width:768px){.os026-story .os026-ou{padding-bottom:50vh}.os026-story .os026-bq{position:sticky;top:0}}
+.os026-story.is-sl .os026-sl{display:block;padding:4px 8px;background-color:rgba(255,255,255,.9)}
+.os026-story .os001-ey-q{color:rgba(255,255,255,.55)}
+.os026-story .os001-ret{background-color:transparent;color:var(--os-white);border-top:1px solid currentColor;border-top-color:color-mix(in srgb,currentColor 16%,transparent)}
+.os026-story .os001-ret-note{color:rgba(255,255,255,.55)}
+.os026-story .os026-p,.os026-story .os026-p-dk{-webkit-hyphens:auto;hyphens:auto}
+/* 4.2 SL-08 entfaellt (Weide-Polaroid jetzt in der Gruppe SL-07b): Ruhe nach dem Player, in der Schwarz -> Creme fliesst, dann der Card Stack */
+.os026-story [data-os026-moment="04c-music"]{margin-bottom:55vh}
+@media (max-width:767px){.os026-story [data-os026-moment="04c-music"]{margin-bottom:50svh}}
+/* 4.2 Stop-Frage ohne Pflicht-Zeilenaufteilung: Fallback-Zeile ohne Einzug; Sticky-Position wird per JS aus der echten Hoehe gesetzt */
+/* 2.9.1 Letter Reveal: Buchstaben bleiben Inline-Text (Kerning, Umbruch wie vorher); Wortgruppen brechen nicht */
+/* 2.9.1d Music Player (Baseline-Freeze): rechte Mode-Sektion (.a-tog) minimal ausgewoelbt, alle Labels im Chrome-Objekt.
+   Nur Stage-Layout >= 1200 px; Breite 78 -> 130 px (kleinste Breite mit ca. 12 px Luft fuer "playlist" zur Kurve), rechte Kante 842 px < Stage 1010 px. Typografie unveraendert. */
+@media (min-width:1200px){.os029-mp .mp .a-tog.pc{width:130px;padding:14px 12px 14px 32px;border-radius:0 48px 48px 0 / 0 50% 50% 0}}
+/* Dark Navbar — Kopie der .theme-dark-Regeln aus dem Article Template (nur Lab) */
+.theme-dark .nav-section{background:#000!important;color:#fff!important;border-bottom:1px solid rgba(255,255,255,.22)!important;box-shadow:none!important;overflow:visible!important;z-index:10100!important}
+.theme-dark .nav-section a,.theme-dark .nav-section .nav-textlink,.theme-dark .nav-section .nav-textlink-dropdown{color:#fff!important}
+.theme-dark .nav-section .logo-linkblock,.theme-dark .nav-section .logo-name,.theme-dark .nav-section .logo-name *{color:#fff!important;-webkit-text-fill-color:#fff!important}
+.theme-dark .nav-section .logo-linkblock svg,.theme-dark .nav-section .logo-linkblock svg *{fill:#fff!important;stroke:#fff!important}
+.theme-dark .nav-section .social-icons-wrap,.theme-dark .nav-section .icon-link-block,.theme-dark .nav-section .icon-link-block *{color:#fff!important;fill:#fff!important;stroke:#fff!important}
+.theme-dark .nav-section img.instagram-icon,.theme-dark .nav-section img.x-icon,.theme-dark .nav-section img.tiktok-icon,.theme-dark .nav-section img.search-icon{filter:invert(1)!important}
+.theme-dark .nav-section .search-panel{background:#000!important;border-color:rgba(255,255,255,.2)!important;color:#fff!important}
+.theme-dark .nav-section .search-panel input,.theme-dark .nav-section .search-panel .search-input,.theme-dark .nav-section .search-panel .w-input{background:transparent!important;color:#fff!important;border-color:rgba(255,255,255,.25)!important}
+.theme-dark .nav-section .search-panel input::placeholder,.theme-dark .nav-section .search-panel .w-input::placeholder{color:rgba(255,255,255,.55)!important}
+.theme-dark .nav-section .search-panel .w-button{background:#fff!important;color:#000!important;border:0!important}
+.theme-dark .nav-section .menu-line{background-color:#fff!important}
+.theme-dark .nav-lang-trigger{color:#fff}.theme-dark .nav-lang-globe{filter:invert(1)}
+.theme-dark .nav-lang-menu{background:#fff!important;color:#000!important;z-index:10101}
+.theme-dark .nav-lang-menu a.nav-lang-option{color:#000!important}
+
+
+/* 4.3.3 Hero (Mobile-Zoom ueber --ix/--iy/--iw/--ih, beide Ebenen identisch): eine Farbquelle (--os-hero-ink) fuer Wortmarke + Name; Marke = Flaeche mit Master-Geometrie als Maske; --dy aus der Scrollposition */
+:root{--os-hero-ink:#F0E4CB}
+html.os-hero-big .os001-hero .os026-hero.os029-title .os026-hero-name{color:var(--os-hero-ink)}
+html.os-hero-big .os001-hero-photo .os4-hero-big{transform:translateY(var(--dy,0px))}
+.os4-hero-depth::before{display:none;content:"";position:absolute;left:var(--bx,10%);top:var(--by,30%);width:var(--bw,80%);aspect-ratio:5536.9/1242.7;background-color:var(--os-hero-ink);-webkit-mask:url("https://cdn.prod.website-files.com/695fbd84a9d487b3531dc88b/6ad1e5e4ec6bcf892d0dec1a_os001-off-script-master-creme.svg") 0 0/100% 100% no-repeat;mask:url("https://cdn.prod.website-files.com/695fbd84a9d487b3531dc88b/6ad1e5e4ec6bcf892d0dec1a_os001-off-script-master-creme.svg") 0 0/100% 100% no-repeat;transform:translate3d(0,var(--dy,0px),0)}
+html.os-hero-big .os001-hero-photo .os4-hero-img,html.os-hero-big .os001-hero-photo .os4-hero-fg img{position:absolute;left:var(--ix,0px);top:var(--iy,0px);width:var(--iw,100%);height:var(--ih,100%);max-width:none}
+.os001-hero-photo .os4-hero-fg img{-webkit-mask-position:calc(var(--bx,10%) - var(--ix,0px)) calc(var(--by,30%) + var(--dy,0px) - var(--iy,0px));mask-position:calc(var(--bx,10%) - var(--ix,0px)) calc(var(--by,30%) + var(--dy,0px) - var(--iy,0px))}
+/* 4.3 Abstaende (gezielt) */
+.os026-story [data-os026-moment="05-what-catches-your-eye"]{padding-top:10vh}
+.os026-story [data-os026-moment="08-people"]{padding-top:10vh}
+.os026-story .os026-stop>.os026-threshold{height:20vh}
+@media (max-width:767px){.os026-story [data-os026-moment="08-people"]{padding-top:8vh}.os026-story [data-os026-moment="05-what-catches-your-eye"]{padding-top:8vh}}
+/* 4.3 Polaroid-Gruppe SL-07b haftet, Text laeuft darueber; ?pin=off */
+/* 4.3 weiche Raender SL-12; ?edge=off|soft|strong */
+html.os-edge-soft .os026-story [data-os026-shot="SL-12"] .os4-m img,html.os-edge-strong .os026-story [data-os026-shot="SL-12"] .os4-m img{-webkit-mask-size:100% 100%;mask-size:100% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
+html.os-edge-soft .os026-story [data-os026-shot="SL-12"] .os4-m img{-webkit-mask-image:url("https://cdn.prod.website-files.com/695fbd84a9d487b3531dc88b/6ad203ca61dc2027d3b52c64_os001-julian-brandt-hauseingang-sw-edge-soft.webp");mask-image:url("https://cdn.prod.website-files.com/695fbd84a9d487b3531dc88b/6ad203ca61dc2027d3b52c64_os001-julian-brandt-hauseingang-sw-edge-soft.webp")}
+html.os-edge-strong .os026-story [data-os026-shot="SL-12"] .os4-m img{-webkit-mask-image:url("https://cdn.prod.website-files.com/695fbd84a9d487b3531dc88b/6ad203cb8c54c67e5c68ad49_os001-julian-brandt-hauseingang-sw-edge-strong.webp");mask-image:url("https://cdn.prod.website-files.com/695fbd84a9d487b3531dc88b/6ad203cb8c54c67e5c68ad49_os001-julian-brandt-hauseingang-sw-edge-strong.webp")}
+/* 4.3 Geh-Motiv SL-14 Mitschwenk; ?walk=off|drift */
+@media (min-width:768px){
+}
+/* 4.3.4 SL-04 haftet (Wrapper .os4-st im Designer), Folgetext laeuft darueber, Foto dunkelt ab; ohne Reduced Motion */
+html.os-st .os4-st>[data-os026-shot="SL-04"]{position:sticky;top:0;z-index:0}
+html.os-st .os4-st>[data-os026-shot="SL-04"] .os4-m img{filter:brightness(var(--st-dim,1))}
+html.os-st .os4-st>.os026-sec{position:relative;z-index:2;padding-top:35vh;padding-bottom:45vh}
+@media (max-width:767px){html.os-st .os4-st>[data-os026-shot="SL-04"]{top:max(var(--nav-h,57px),10svh)}html.os-st .os4-st>.os026-sec{padding-top:30svh;padding-bottom:40svh}}
