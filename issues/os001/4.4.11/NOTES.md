@@ -23,3 +23,7 @@ hero-image, hero-image-mobile, hero-image-alt-text.
 
 VG WORT: nur DE, als letztes Rich-Text-Embed (statisch, eager, Klasse vg-wort-code + Inline-Groesse 0);
 CMS-Feld vg-wort-code bleibt leer (Template-Embed liegt nur in layout-normal/-selected und nutzt vg05).
+
+Links im Fliesstext (2026-10-20): Stilregel `html body .os026-story .os026-p a[href]` (Textfarbe, 1px-Unterstreichung,
+Hover 2px, sichtbarer Fokus) im selben Lab-Embed 61473257. Die Links selbst stehen nur im CMS-Rich-Text (sprachabhaengig),
+nicht im Paket; bei einem erneuten Transfer aus dem Lab muessen sie wieder eingesetzt werden.
