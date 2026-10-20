@@ -205,6 +205,9 @@ def sri(b): return 'sha384-' + base64.b64encode(hashlib.sha384(b).digest()).deco
 def main():
     ap = argparse.ArgumentParser()
     for k in ('lab', 'head', 'footer', 'manifest', 'out'): ap.add_argument('--' + k, required=True)
+    ap.add_argument('--vgwort', default=None,
+                    help='vollstaendige VG-WORT-Zaehlmarke (https://vgNN.met.vgwort.de/na/<32 hex>); nur fuer die deutsche Fassung. '
+                         'Wird als letztes, eigenes Embed ohne Chunk-Marker angehaengt (statisch im HTML, kein JS, genau einmal).')
     ap.add_argument('--mode', choices=('cdn', 'inline-sync', 'inline-async'), default='cdn',
                     help='Ladeweg im Start-Teil des Rich Text: Paket-CSS+JS vom CDN (Loader-Gate) | CSS inline + JS synchron | CSS inline + JS asynchron (Gate)')
     a = ap.parse_args()
@@ -282,6 +285,10 @@ def main():
     os.makedirs(a.out + '/dist', exist_ok=True)
     open(a.out + '/dist/issue.min.css', 'wb').write(cssb); open(a.out + '/dist/issue.min.js', 'wb').write(jsb)
     rt = ''.join("<div data-rt-embed-type='true'>%s%s</div>" % (ch.marker(p), c) for p, c in ch.chunks)
+    if a.vgwort:
+        if not re.fullmatch(r'https://vg\d{2}\.met\.vgwort\.de/na/[0-9a-f]{32}', a.vgwort): raise SystemExit('VG-WORT-Zaehlmarke ungueltig: ' + a.vgwort)
+        rt += ("<div data-rt-embed-type='true'><div class=\"vg-wort-code\" style=\"display:block;width:0;height:0;overflow:hidden;line-height:0\">"
+               "<img src=\"%s\" width=\"1\" height=\"1\" alt=\"\" loading=\"eager\"></div></div>" % a.vgwort)
     # Unsichtbare/mehrdeutige Zeichen als Entitaeten (uebertragungssicher, im DOM identisch); nie in Style/Skript-Rohtext
     for raw in re.findall(r'<(?:style|script)\b[^>]*>(.*?)</(?:style|script)>', rt, re.S):
         assert not INVISIBLE.search(raw), 'Unsichtbares Zeichen in Style/Skript'
@@ -291,7 +298,7 @@ def main():
     sizes = [len(ch.marker(p)) + len(c) for p, c in ch.chunks]
     rep = {'package': pid, 'mode': a.mode, 'cdn_base': base, 'start_chunks': boot_n, 'roundtrip_identisch': ok, 'chunks': len(sizes), 'chunk_max': max(sizes), 'chunk_sizes': sizes,
            'limit': LIMIT, 'wrapper': ch.n, 'css_bytes': len(cssb), 'js_bytes': len(jsb), 'styles': len(css), 'skripte_pre': len(pre),
-           'skripte_main': len(main_js), 'daten': [d[0] for d in data], 'preloads': len(links), 'rt_zeichen': len(rt), 'sri': S}
+           'skripte_main': len(main_js), 'daten': [d[0] for d in data], 'preloads': len(links), 'rt_zeichen': len(rt), 'vgwort': a.vgwort, 'sri': S}
     json.dump(rep, open(a.out + '/report.json', 'w'), indent=1, ensure_ascii=False)
     print(json.dumps({k: v for k, v in rep.items() if k != 'chunk_sizes'}, ensure_ascii=False))
     if not ok:
