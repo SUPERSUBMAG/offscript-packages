@@ -33,12 +33,12 @@
      "bytes": 80939
     },
     "issue.min.js": {
-     "sri": "sha384-GSD0ZAS3VVRH0zRzaAMgnuoBCxErYOlM9DLizXx6ZIUcXpzFlJdPgNyRQLHKjgVx",
-     "bytes": 113594
+     "sri": "sha384-0a8OIGa/0AqpwKnjlNI3VR8oBkLOF5/SFZ9Y4y+AIQhhBfEVGMAyoUre3CUHSIj+",
+     "bytes": 114137
     }
    },
    "loader": "1.3",
-   "notes": "OFF SCRIPT 001: RADIO SUPERSUB Media Player V2 ersetzt den alten SS/PLAY-Player; Quelle /os-lab-player (Staging 2026-10-20 14:47 UTC) nach Release-Vorbereitung (issues/os001/4.4.11/prep_release.py). 4.4.10 unveraendert. Zusaetzlich: OFF-SCRIPT-Mega-Dropdown dunkel (html.theme-dark .nav-mega …), aus dem Lab-Embed 61473257. Dazu Stil fuer Links im Fliesstext (html body .os026-story .os026-p a[href])."
+   "notes": "OFF SCRIPT 001: RADIO SUPERSUB Media Player V2 ersetzt den alten SS/PLAY-Player; Quelle /os-lab-player (Staging 2026-10-20 14:47 UTC) nach Release-Vorbereitung (issues/os001/4.4.11/prep_release.py). 4.4.10 unveraendert. Zusaetzlich: OFF-SCRIPT-Mega-Dropdown dunkel (html.theme-dark .nav-mega …), aus dem Lab-Embed 61473257. Dazu Stil fuer Links im Fliesstext (html body .os026-story .os026-p a[href]). Dazu sprachabhaengige Aria-Labels der Video-Schalter aus dem Rich Text (data-l-play/data-l-pause), fuer EN/ES."
   }
  ]
 }

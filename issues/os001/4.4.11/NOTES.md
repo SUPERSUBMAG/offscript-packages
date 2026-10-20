@@ -27,3 +27,7 @@ CMS-Feld vg-wort-code bleibt leer (Template-Embed liegt nur in layout-normal/-se
 Links im Fliesstext (2026-10-20): Stilregel `html body .os026-story .os026-p a[href]` (Textfarbe, 1px-Unterstreichung,
 Hover 2px, sichtbarer Fokus) im selben Lab-Embed 61473257. Die Links selbst stehen nur im CMS-Rich-Text (sprachabhaengig),
 nicht im Paket; bei einem erneuten Transfer aus dem Lab muessen sie wieder eingesetzt werden.
+
+Mehrsprachigkeit (2026-10-20): kleines Skript im Lab-Embed 61473257 uebernimmt die Aria-Labels der Video-Schalter
+aus `data-l-play`/`data-l-pause` im Rich Text (EN/ES); ohne diese Attribute (DE, Lab) wirkungslos. Keine Sprachtexte im Paket.
+Ein gemeinsames Paket fuer DE/EN/ES; die Sprachfassungen unterscheiden sich nur im Rich Text.
