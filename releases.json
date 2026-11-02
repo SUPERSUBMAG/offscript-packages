@@ -153,6 +153,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Hero mobil mit Foto unten buendig und 6 % tiefer, damit das Logo ueber dem Kopf lesbar ist (Streifen im Seitenhintergrund mit weichem Uebergang, kein Zuschnitt); Tablet und Desktop unveraendert. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.6",
+   "tag": "os002-1.0.6",
+   "lab_version": "1.0.6",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-5H/9xGLhNcPmKeTg5iML9sN/qKKjZ1P6UydmnH3hKEubmFsZPhbsZETmbWFEPd7s",
+     "bytes": 52261
+    },
+    "issue.min.js": {
+     "sri": "sha384-bB77umYa1OB5ym61F5NuI38QwDOr97yWEaOKGHBJKzkllXUXc6Gzs23/lHtoJw3u",
+     "bytes": 62611
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Diagnose-Version. Ohne URL-Parameter identisch mit 1.0.5; mit ?diag=... lassen sich Logo-Bewegung, Textbewegungen, Collage, Differenz-Ueberblendung und Browser-Animation einzeln oder kombiniert abschalten bzw. testweise wie OS001 darstellen. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
