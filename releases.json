@@ -172,6 +172,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Diagnose-Version. Ohne URL-Parameter identisch mit 1.0.5; mit ?diag=... lassen sich Logo-Bewegung, Textbewegungen, Collage, Differenz-Ueberblendung und Browser-Animation einzeln oder kombiniert abschalten bzw. testweise wie OS001 darstellen. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.7",
+   "tag": "os002-1.0.7",
+   "lab_version": "1.0.7",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-WRIhscG51W8OhoZF1xW6RtHbe1CxiX3irRh5ETLFbDHQtySMV+h9EOSM2za4sGiN",
+     "bytes": 52261
+    },
+    "issue.min.js": {
+     "sri": "sha384-i6jwsEs15inM91feFTZsUNQt1FzN7pC782lqsnhNyuPYxX7LrrpBm7hg1ljXWOvJ",
+     "bytes": 64060
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Diagnose-Version 2. Ohne URL-Parameter identisch mit 1.0.5; zusaetzliche Schalter fuer die Fotosequenzen (seqlite, seqsmall, stablevh, noshade) und Messanzeige (hud). Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
