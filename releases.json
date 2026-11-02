@@ -134,6 +134,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Outfit-Credits fest auf dem Foto (erscheinen mit der Fotounterkante, buendig zum Consent-Symbol, Ausgleich der Browserleiste); Differenz-Uebergaenge, Credits und Abdunklung ueber die Scroll-Zeitleiste des Browsers synchron zum Scrollen, bisheriger Ablauf als Fallback. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.5",
+   "tag": "os002-1.0.5",
+   "lab_version": "1.0.5",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-k2kb9MtJHlOkk0DU3m0hm3Tt+3zSy1UqoG3hyU5cFozcCkTmfixW602E1MeN67Qc",
+     "bytes": 52261
+    },
+    "issue.min.js": {
+     "sri": "sha384-oHqSHbrQT/HMLDzx7HgNmzrL3ZXCZntaArUD2+/evYwVjmA0ycKrnCtAWSkIuJC8",
+     "bytes": 59758
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Hero mobil mit Foto unten buendig und 6 % tiefer, damit das Logo ueber dem Kopf lesbar ist (Streifen im Seitenhintergrund mit weichem Uebergang, kein Zuschnitt); Tablet und Desktop unveraendert. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
