@@ -77,6 +77,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Outfit-Credits am Seitenrand vertikal mittig ausgerichtet, Zeilenumbruch ohne einzelnes Element unter mehrteiliger Zeile; ES-Pull-Quote mit festem Umbruch. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.2",
+   "tag": "os002-1.0.2",
+   "lab_version": "1.0.2",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-Uyi2ZrOaH9WGf4WH7ZbmafMUW7/R1eYsJSHLFGLIwNOSQDtBwfGhMsw0mUnQEpH1",
+     "bytes": 51707
+    },
+    "issue.min.js": {
+     "sri": "sha384-wsJzVMrI80BwQ8kjPaGfzPkGacts9j+ZNUmo6FlF3q3Akg/L+fwzSC7UWfZ26/PW",
+     "bytes": 56152
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Hero-Logo mit derselben Scroll-Logik wie os001 (sinkt mit 20 % der Scrollgeschwindigkeit, weicher Stopp vor dem Namen); Differenz-Sequenzen ohne Umschalten des Mischmodus, Bilder vorab dekodiert, keine Layout-Lesezugriffe beim Scrollen; Mega-Dropdown dunkel. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
