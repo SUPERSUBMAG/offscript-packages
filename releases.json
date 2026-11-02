@@ -96,6 +96,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Hero-Logo mit derselben Scroll-Logik wie os001 (sinkt mit 20 % der Scrollgeschwindigkeit, weicher Stopp vor dem Namen); Differenz-Sequenzen ohne Umschalten des Mischmodus, Bilder vorab dekodiert, keine Layout-Lesezugriffe beim Scrollen; Mega-Dropdown dunkel. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.3",
+   "tag": "os002-1.0.3",
+   "lab_version": "1.0.3",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-sLhMjgQbGyDjq5Gcvp1vQdMmirSY8taziZNx9v6Q3Bth1dqYlmocdj6cb4J8LgUz",
+     "bytes": 51857
+    },
+    "issue.min.js": {
+     "sri": "sha384-Uztllemhu4qkaZXKRmEve5MxuxzLfqNlreXl379tATriZc0q1OwnKpAJoj2FN+Vm",
+     "bytes": 57459
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Sequenz-Buehne in voller Bildschirmhoehe (lvh, kein Springen bei ein-/ausfahrender Browserleiste), Outfit-Credits fest am Bildschirmrand buendig zum Consent-Symbol, Hero-Logo mit Mindestabstand 16 px zur Navigation, weniger Arbeit beim Scrollen. Navigation folgt dem Seitenhintergrund (#131313, zum Film hin Verlauf in Schwarz). Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
