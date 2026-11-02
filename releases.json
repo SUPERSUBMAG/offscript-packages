@@ -58,6 +58,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: erste CMS-Fassung. Paket enthaelt ausschliesslich Darstellungscode (CSS/JS inkl. Player); Inhalte, Texte und Medien liegen im CMS."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.1",
+   "tag": "os002-1.0.1",
+   "lab_version": "1.0.1",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-V0joDNa8JkKRzKCQuFzMdF1BVfE01nZTmvCuQL13Go0/T2Ys7tTs3seCNRsb/YSr",
+     "bytes": 51338
+    },
+    "issue.min.js": {
+     "sri": "sha384-VNM2tS4ZN698p74g3q/pogsMJe+FCU5HjwLUBHL+ig3RJ1ESmb8WLDDj6LRBJDMg",
+     "bytes": 54789
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Outfit-Credits am Seitenrand vertikal mittig ausgerichtet, Zeilenumbruch ohne einzelnes Element unter mehrteiliger Zeile; ES-Pull-Quote mit festem Umbruch. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
