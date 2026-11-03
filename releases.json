@@ -286,6 +286,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Diagnose-Version 7. Ohne URL-Parameter identisch mit 1.0.5; Schalter flat loest die fest gehaltenen Buehnen von mitscrollenden Ebenen. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.13",
+   "tag": "os002-1.0.13",
+   "lab_version": "1.0.13",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-s8Xt2NdLQ/Oky7dMKfK99W5eXjOE4y1MSjtIqDvGuP00y4czBvyjxIV7o/EvC4Nk",
+     "bytes": 53089
+    },
+    "issue.min.js": {
+     "sri": "sha384-REB7VoDhlccMl6UzWvjlPRw+dX3NgDLYmhNC2xJ2KMafXWZ+hcIBVqklLBmmHmOk",
+     "bytes": 65987
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: ruhige Buehnen als Standard (vorher Diagnose-Schalter seqpin, iqpin, iqst, softline, flat); Mobile ohne Schuh-Angabe beim sitzenden Foto. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
