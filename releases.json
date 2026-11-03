@@ -210,6 +210,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Diagnose-Version 3. Ohne URL-Parameter identisch mit 1.0.5; Schalter seqiso und seqpin gegen das Zittern der Fotobuehne auf iPhone Safari. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.9",
+   "tag": "os002-1.0.9",
+   "lab_version": "1.0.9",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-RxZa5OSqMALcPh962T60Bj7Vwqp0kp6wQo9juv5iEEaqJvydHdo2kEkL7/Fy2ywA",
+     "bytes": 52261
+    },
+    "issue.min.js": {
+     "sri": "sha384-igMDbspPKpuQlD2EmxJDvXOQ+uV3mfz6sal3T7BSsutkpO0zhjbFEwETuNbV06VL",
+     "bytes": 64766
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Diagnose-Version 4. Ohne URL-Parameter identisch mit 1.0.5; seqpin haelt die Buehne ab dem ersten Pixel fest. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
