@@ -267,6 +267,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Diagnose-Version 6. Ohne URL-Parameter identisch mit 1.0.5; Schalter iqst animiert das Zitat-Modul ueber die Scroll-Zeitleiste. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.12",
+   "tag": "os002-1.0.12",
+   "lab_version": "1.0.12",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-qEkHgg4FJyjtU2MXA/6ptLQKilmYCsh+BTKAYZF07/z3TBnX+CCzU7nB7U+1+6Fm",
+     "bytes": 52263
+    },
+    "issue.min.js": {
+     "sri": "sha384-PfudCHoo7rjYVSR8we2oYXSNQ4rPTxZ5SOdWJbpLU9qZ49uAQQboHGJfk8H8pg35",
+     "bytes": 66173
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Diagnose-Version 7. Ohne URL-Parameter identisch mit 1.0.5; Schalter flat loest die fest gehaltenen Buehnen von mitscrollenden Ebenen. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
