@@ -248,6 +248,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Diagnose-Version 5. Ohne URL-Parameter identisch mit 1.0.5; Schalter iqpin und softline zusaetzlich zu seqpin. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.11",
+   "tag": "os002-1.0.11",
+   "lab_version": "1.0.11",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-JJ/NH5rm+dpiSNWhsGWUIpdIwxlwBcofsCB079rYEKRl10XeCF0AShBGyIYADtXc",
+     "bytes": 52263
+    },
+    "issue.min.js": {
+     "sri": "sha384-AfeCyuiZ1hrSF8XBszenlzNzu3wfJIRc6k/AVYw906jd18XNurhNoedruyUIxRFj",
+     "bytes": 66069
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Diagnose-Version 6. Ohne URL-Parameter identisch mit 1.0.5; Schalter iqst animiert das Zitat-Modul ueber die Scroll-Zeitleiste. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
