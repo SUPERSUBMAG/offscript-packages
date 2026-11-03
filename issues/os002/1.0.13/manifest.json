@@ -1,0 +1,28 @@
+{
+ "package": "os002@1.0.13",
+ "lab_version": "1.0.13",
+ "roots": [
+  "os002"
+ ],
+ "lab_only": {
+  "head": [],
+  "footer": []
+ },
+ "reading_hide": [
+  ".os002-hero__fg",
+  ".os002-hero__logo",
+  ".os002-pq",
+  ".os002-seq__shade",
+  ".os002-seq__soft",
+  ".os002-defs"
+ ],
+ "embed_limit": 9800,
+ "pre_paint": {
+  "class": [
+   "theme-dark"
+  ]
+ },
+ "pre_paint_quelle": "Navigation dunkel ab dem ersten Frame (Story ist dunkel, Marker data-theme=dark am Wurzelelement)",
+ "cdn_base": "https://cdn.jsdelivr.net/gh/SUPERSUBMAG/offscript-packages@{package}-{version}/packages/{package}/{version}/",
+ "lab_source": "lokaler Paket-Build (Storytelling-Vorschau Version 34, ohne Vorschau-Rahmen); Story-HTML je Sprache"
+}
