@@ -229,6 +229,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Diagnose-Version 4. Ohne URL-Parameter identisch mit 1.0.5; seqpin haelt die Buehne ab dem ersten Pixel fest. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.10",
+   "tag": "os002-1.0.10",
+   "lab_version": "1.0.10",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-G732gcIzdSdpRkep4fRrxn6hiGgeFtTAVQkeDHQ4Dyh/b7dhvbN9Y26coGvNGQns",
+     "bytes": 52263
+    },
+    "issue.min.js": {
+     "sri": "sha384-mQHQ+ZPEoX6steZ6+ynzEyLGkCH6+Jf2ORJiq3NMIrm8eMsIPrVJGC2YTOwVgkZV",
+     "bytes": 65235
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Diagnose-Version 5. Ohne URL-Parameter identisch mit 1.0.5; Schalter iqpin und softline zusaetzlich zu seqpin. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
