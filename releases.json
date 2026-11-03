@@ -191,6 +191,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Diagnose-Version 2. Ohne URL-Parameter identisch mit 1.0.5; zusaetzliche Schalter fuer die Fotosequenzen (seqlite, seqsmall, stablevh, noshade) und Messanzeige (hud). Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.8",
+   "tag": "os002-1.0.8",
+   "lab_version": "1.0.8",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-IQsR5eUexxA17/VnMmlw2wqWvwv9xHTrf4mdKvLakDIIqrzKoYIryztG9p2eWhbp",
+     "bytes": 52261
+    },
+    "issue.min.js": {
+     "sri": "sha384-HeK1sbCmT27WG06iUiMayziVgAu0GTcz50/4kMlYH8YqGZSEK0W8HFc6RxT5/Q6t",
+     "bytes": 64682
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Diagnose-Version 3. Ohne URL-Parameter identisch mit 1.0.5; Schalter seqiso und seqpin gegen das Zittern der Fotobuehne auf iPhone Safari. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
