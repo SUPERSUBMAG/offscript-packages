@@ -324,6 +324,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: saubere Kanten der gedrehten Collage-Fotos auf iOS (transparenter Innenrand); Schuh-Angabe beim sitzenden Foto auf Mobile in allen Sprachen ausgeblendet; Diagnose-Schalter notriaa. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.15",
+   "tag": "os002-1.0.15",
+   "lab_version": "1.0.15",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-SHuTyLW1hi/1+A/c+RCiQj6KLDJ3sPbvGp5Wa3HEPzPy4Tw1dou16/P4TWzAp/Tv",
+     "bytes": 53759
+    },
+    "issue.min.js": {
+     "sri": "sha384-LGDNxqr4pRt44lEUe7HsqEJwwTC38mv2K2RI3mqJ++D6TL+LxTzn7unujCL7aRwi",
+     "bytes": 66069
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Schuh-Angabe auf Mobile zusaetzlich bei Foto 2 und Foto 5 ausgeblendet (DE/EN/ES); sonst wie 1.0.14. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
