@@ -305,6 +305,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: ruhige Buehnen als Standard (vorher Diagnose-Schalter seqpin, iqpin, iqst, softline, flat); Mobile ohne Schuh-Angabe beim sitzenden Foto. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.14",
+   "tag": "os002-1.0.14",
+   "lab_version": "1.0.14",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-mJ1ulgSMi7Yp41QW9wIlxzj0wHHE/+BuF9ILtLQURxjfCUW4Yf4jDWbV4GIsdMwR",
+     "bytes": 53434
+    },
+    "issue.min.js": {
+     "sri": "sha384-+G2541NMM2Vb1ez5c6g3M1A5drzHhucAkpho1fgEkbZIwkXZr97/9EioFyDr11gg",
+     "bytes": 66069
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: saubere Kanten der gedrehten Collage-Fotos auf iOS (transparenter Innenrand); Schuh-Angabe beim sitzenden Foto auf Mobile in allen Sprachen ausgeblendet; Diagnose-Schalter notriaa. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
