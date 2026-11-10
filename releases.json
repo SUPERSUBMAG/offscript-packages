@@ -400,6 +400,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Desktop-Teaser minimal kleiner, letzter Satz DE/EN in eigener Zeile; Mobile unveraendert; sonst wie 1.0.17. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.19",
+   "tag": "os002-1.0.19",
+   "lab_version": "1.0.19",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-Oh1rMWfTSzSFczMKPc7E6EXWYbYYfRCfVNtQIISabFuLyDagOaAl1haI9lJzfcbF",
+     "bytes": 54364
+    },
+    "issue.min.js": {
+     "sri": "sha384-Z4qB+rmkzuppvUBvitMQ66HOnSYezwautWXUkZRX9u6+I+ZbBegWXkU3G9bZWcEC",
+     "bytes": 66069
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Desktop-Hero zentriert (neuer Bildzuschnitt analog Startseiten-Vorschau), Logo-Position Desktop x 50 / y 12; Mobile unveraendert; sonst wie 1.0.18. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
