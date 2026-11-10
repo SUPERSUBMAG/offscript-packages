@@ -419,6 +419,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Desktop-Hero zentriert (neuer Bildzuschnitt analog Startseiten-Vorschau), Logo-Position Desktop x 50 / y 12; Mobile unveraendert; sonst wie 1.0.18. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.20",
+   "tag": "os002-1.0.20",
+   "lab_version": "1.0.20",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-+GdT6dcZhICGSkKO05FLIpsINXcM0WtnaufLnBd4iF5BskLsK+DnJdtwfrNtiyWd",
+     "bytes": 54718
+    },
+    "issue.min.js": {
+     "sri": "sha384-vO+dEFh1jJ/KT5coVZexs7EoNHgN0fgkkfl+GusRiosBzRzP9zB1F8FbejewTc5N",
+     "bytes": 66069
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Hero an stabile Seitenhoehe (--ss-stable-vh) gebunden, kein Springen im Instagram-In-App-Browser; sonst wie 1.0.18 (1.0.19 verworfen). Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
