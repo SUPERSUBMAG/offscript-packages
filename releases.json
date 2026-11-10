@@ -362,6 +362,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Mega-Menue im dunklen Story-Modus Schwarz (wie Menue-Overlay), Navbar weiter im Story-Grau; sonst wie 1.0.15. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.17",
+   "tag": "os002-1.0.17",
+   "lab_version": "1.0.17",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-8cF1ulKsgRzuGdOdDIrjDVrrP6zm2kp8dEAqq3wsWm12efiF7y5WBy/4KhV1zW1f",
+     "bytes": 54058
+    },
+    "issue.min.js": {
+     "sri": "sha384-VAKYCKClItM/dBv7DhM0gp/m+G2rNml90XnRaK88L44iXCpE4YctdnPfxa9Nj+0Q",
+     "bytes": 66069
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Desktop-Logo im Hero so gross wie bei OFF SCRIPT 001 (Brandt-Formel), Mobile unveraendert; sonst wie 1.0.16. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
