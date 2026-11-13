@@ -476,6 +476,44 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Mobile-Layout: Hero-Namen bleiben an der freigegebenen Bildposition (nie hoeher), in flachen Fenstern verlaengerter Hero statt Verschiebung; sonst wie 1.0.21. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.23",
+   "tag": "os002-1.0.23",
+   "lab_version": "1.0.23",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-YKB2M/kW6la4IRgZ7loUWYj3WyDKQVB0nSJcIuOP0lIhrkycvH6vIRXxdSIbM8Xy",
+     "bytes": 57406
+    },
+    "issue.min.js": {
+     "sri": "sha384-tOO/BkAGuJ95YsGitGWMgUEve2HQlSOffix44Omwtc+D1c2mgXMoizk3iD8kuDpU",
+     "bytes": 67800
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Scrollbalken an der Navbar (wie Selected) in OS002-Gelb; sonst wie 1.0.22. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os001",
+   "version": "4.4.12",
+   "tag": "os001-4.4.12",
+   "lab_version": "4.4.11",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-a9FE1PlNgIyqpRrBZsjyybxuLtr/y7L4ec0oxnUFQIOGhomVLuZ6hR6uabd6+mtc",
+     "bytes": 81395
+    },
+    "issue.min.js": {
+     "sri": "sha384-SSfuc9uBbqjYfNnmUJif7N905WDgDsototDVaQChhIvxowalf3a0mFWKDFtgFtJo",
+     "bytes": 116365
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 001: Scrollbalken an der Navbar (wie Selected), Creme, auf heller Flaeche Ziegelrot; sonst wie 4.4.11. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
