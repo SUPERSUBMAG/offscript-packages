@@ -457,6 +457,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 002: Hero-Namen nie abgeschnitten; Desktop: Namen bleiben auf dem Boden (Position wie freigegeben), schrumpfen max. 25 %, sonst verlaengerter Hero; sonst wie 1.0.20. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os002",
+   "version": "1.0.22",
+   "tag": "os002-1.0.22",
+   "lab_version": "1.0.22",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-gWaJZypckTa8FFdc6VB3D5HiypdcOx5giw/XcV0acv/nASjVS0Qen+qpMKNvOHwz",
+     "bytes": 56860
+    },
+    "issue.min.js": {
+     "sri": "sha384-UPyL+EIQPfVaUP2TrnT9FK161AbnxJ6y5PbKGIpVBgX5ECBnc2LYeuKEsfpgv7X9",
+     "bytes": 66069
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 002: Mobile-Layout: Hero-Namen bleiben an der freigegebenen Bildposition (nie hoeher), in flachen Fenstern verlaengerter Hero statt Verschiebung; sonst wie 1.0.21. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
