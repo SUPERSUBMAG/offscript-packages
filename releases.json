@@ -514,6 +514,25 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 001: Scrollbalken an der Navbar (wie Selected), Creme, auf heller Flaeche Ziegelrot; sonst wie 4.4.11. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "os001",
+   "version": "4.4.13",
+   "tag": "os001-4.4.13",
+   "lab_version": "4.4.11",
+   "status": "staging-test",
+   "files": {
+    "issue.min.css": {
+     "sri": "sha384-Yk3WskTN9kPqjnAqRM0frMUhDJa1lKTxVnKcH30WHozhe9T5Fy/6Hx6inIGxa3No",
+     "bytes": 81395
+    },
+    "issue.min.js": {
+     "sri": "sha384-2cCoCaDj9NWjl4Q/Th+3Eya/D76VGWM9jCrO6RRIwX+fLVe6GfGYmeMEXDtp5CJM",
+     "bytes": 116432
+    }
+   },
+   "loader": "1.3",
+   "notes": "OFF SCRIPT 001: Scrollbalken an der Navbar wie Layout Selected (Creme, auf hellem Hintergrund Ziegel, immer kontrastreichere Farbe); ersetzt 4.4.12; sonst wie 4.4.11. Paket enthaelt ausschliesslich Darstellungscode."
   }
  ]
 }
