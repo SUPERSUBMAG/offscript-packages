@@ -552,6 +552,31 @@
    },
    "loader": "1.3",
    "notes": "OFF SCRIPT 001: Scrollbalken an der Navbar wie Layout Selected (Creme, auf hellem Hintergrund Ziegel, kontrastreichere Farbe nach dem Rendern der Farb-Engine); ersetzt 4.4.12/4.4.13; sonst wie 4.4.11. Paket enthaelt ausschliesslich Darstellungscode."
+  },
+  {
+   "issue": "ssmp-home",
+   "version": "1.0.0",
+   "tag": "ssmp-home-1.0.0",
+   "status": "staging-test",
+   "files": {
+    "julian-brandt_5-selected-tracks_cd_880.jpg": {
+     "sri": "sha384-ifWBjKSaH4c87W9N6hLStaB4tdyR18+/4Br9WosaTOkdy/5Ma7FFpTBjIMwxZUg6",
+     "bytes": 197973
+    },
+    "malik-tillman_5-selected-tracks_cd_880.jpg": {
+     "sri": "sha384-XtgR1ic+Ygv01kLgzVpnZGfh1EnlzlWAV3H1jzuC9LURLFmFCAveFnv1bKGCwobw",
+     "bytes": 182334
+    },
+    "ssmp-home.min.css": {
+     "sri": "sha384-bC0/WMEqZTtcmIB6xo6ortca7e9RYaiPtUvsiLhCWG4ZbIjF9vrGTBAN81BVnE3v",
+     "bytes": 30281
+    },
+    "ssmp-home.min.js": {
+     "sri": "sha384-gnadHg/SfFFQ8aJyhQxDgCumd5+BksKpKBohBQ9px9ZNkfyrT0RS9G496G3dg1k1",
+     "bytes": 45810
+    }
+   },
+   "notes": "SUPERSUB MEDIA PLAYER fuer die Homepage (Abschnitt unter Top Stories): SUPERSUB SOUNDS, Gaeste Malik Tillman, Julian Brandt. Quelle: RADIO SUPERSUB/media-player-v2, npm run build:home."
   }
  ]
 }
